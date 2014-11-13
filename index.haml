@@ -12,10 +12,10 @@
       @import url(miniset2/stylesheet.css);
 
       body {
-        background-image: url(background-3.jpg);
+        background-image: url(background-5.jpg);
         background-repeat: no-repeat;
         background-position: top center;
-        background-color: #222;
+        background-color: #070605;
 
         color: white;
         font-family: 'Source Sans Pro', sans-serif;
@@ -27,9 +27,21 @@
 
         position: relative;
       }
-      @media only screen and (max-width : 480px) {
+      @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (   min--moz-device-pixel-ratio: 2),
+      only screen and (     -o-min-device-pixel-ratio: 2/1),
+      only screen and (        min-device-pixel-ratio: 2),
+      only screen and (                min-resolution: 192dpi),
+      only screen and (                min-resolution: 2dppx) { 
         body {
-          background-size: 2000px;
+          background-image: url(background-5@2x.jpg);
+          background-size: 3000px 2000px
+        }
+      }
+      @media only screen and (max-width : 768px) {
+        body {
+          background-size: 2300px;
         }
       }
       .logo {
@@ -110,7 +122,7 @@
           %p.lead
             Has your Raspberry Pi lost its tang?
           %p.lead
-            <strong>Tingbot</strong> is the most fun you'll have with your clothes on
+            <strong>Tingbot</strong> is the most fun you'll have with your clothes on.
         .col-sm-3.col-sm-offset-6
           .well
             %h3(style="margin-top:0;")
@@ -129,13 +141,13 @@
                 .mc_hidden(style="position: absolute; left: -5000px;")
                   %input(type="text" name="b_b8440d6a92dc8fa91a14d4e39_5382b4e26e" tabindex="-1" value="")
                   %input(type="submit")
-      .div(style="height:60px")
+      .div(style="height:100px")
       .row
         .col-sm-4.col-sm-offset-4
           .row
             .col-xs-6
               %div.hidden-xs(style="height:15px")
-              In the meantime, check out our release app
+              In the meantime, check out our release app >
             .col-xs-6
               %a(href="http://ting.it")
                 %img(src="sd.png" width="96")
