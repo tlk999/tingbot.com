@@ -26,6 +26,7 @@
         margin: 0 auto;
 
         position: relative;
+        -webkit-font-smoothing: subpixel-antialiased;
       }
       @media
       only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -65,6 +66,7 @@
         border-bottom: 1px solid #94c9e0;
         outline: none;
         padding-bottom: 5px;
+        border-radius: 0;
       }
       h3 {
         font-family: 'miniset2regular';
@@ -141,7 +143,7 @@
                 .mc_hidden(style="position: absolute; left: -5000px;")
                   %input(type="text" name="b_b8440d6a92dc8fa91a14d4e39_5382b4e26e" tabindex="-1" value="")
                   %input(type="submit")
-      .div(style="height:100px")
+      .hidden-xs(style="height:100px")
       .row
         .col-sm-4.col-sm-offset-4
           .row
@@ -152,7 +154,7 @@
               %a(href="http://ting.it")
                 %img(src="sd.png" width="96")
       / spacer for footer
-      .div(style="height:80px")
+      %div(style="height:80px")
       %footer
         .pull-left
           %img.pull-left(src="raspberry.png" width="25" style="margin-right:12px;")
