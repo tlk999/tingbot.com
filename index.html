@@ -1,128 +1,382 @@
 <html>
-  <head>
-    <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'>
-    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
-    <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <meta content='Tingbot lives in your home or on your desk. It uses your Raspberry Pi to make fun things, get coding or share creative projects.' name='description'>
-    <title>
-      Tingbot: A NORD collective project
-    </title>
-    <style>
-      @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600);
-      @import url(miniset2/stylesheet.css);
-      
-      body {
-        background-image: url(background-5.jpg);
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-color: #070605;
-      
-        color: white;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 16px;
-        font-weight: 200;
-      
-        max-width: 1200px;
-        margin: 0 auto;
-      
-        position: relative;
-        -webkit-font-smoothing: subpixel-antialiased;
-      }
-      @media
-      only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (   min--moz-device-pixel-ratio: 2),
-      only screen and (     -o-min-device-pixel-ratio: 2/1),
-      only screen and (        min-device-pixel-ratio: 2),
-      only screen and (                min-resolution: 192dpi),
-      only screen and (                min-resolution: 2dppx) { 
-        body {
-          background-image: url(background-5@2x.jpg);
-          background-size: 3000px 2000px
-        }
-      }
-      @media only screen and (max-width : 768px) {
-        body {
-          background-size: 2300px;
-        }
-      }
-      .logo {
-        margin: 0 auto;
-        width: 330px;
-        max-width: 100%;
-        margin-top: 50px;
-        margin-bottom: 60px;
-      }
-      .well {
-        background-color: rgba(0,0,0,0.6);
-        border: none;
-        border-radius: 0;
-        padding: 12px;
-        padding-bottom: 15px;
-      }
-      input {
-        background: transparent;
-        width: 100%;
-        border: none;
-        border-bottom: 1px solid #94c9e0;
-        outline: none;
-        padding-bottom: 5px;
-        border-radius: 0;
-      }
-      h3 {
-        font-family: 'miniset2regular';
-        font-size: 17px;
-        -webkit-font-smoothing: none;
-        color: #45caf3;
-        margin-bottom: 20px;
-      }
-      h4 {
-        font-weight: 400;
-        font-size: 16px;
-        margin-top: 20px;
-        margin-bottom: 4px;
-      }
-      p {
-      
-      }
-      .lead {
-        font-weight: 300;
-        font-size: 26px;
-        line-height: 1.3;
-      }
-      .lead strong {
-        font-weight: 400;
-      }
-      a.nostyle {
-        color: inherit;
-        text-decoration: inherit;
-      }
-      a.nostyle {
-      
-      }
-      form {
-        margin: 0;
-      }
-      footer {
-        position: absolute;
-        bottom: 0;
-        left:15px;
-        right:15px;
-        font-size: 10px;
-        line-height: 1.6;
-        height: 60px;
-      }
-      .nord {
-        letter-spacing: 0.2em;
-      }
-    </style>
-  </head>
-  <body>
-    <div class='container-fluid'>
+<head>
+  <link href="style.css" rel="stylesheet">
+  <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'>
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+  <meta content='width=device-width, initial-scale=1' name='viewport'>
+  <meta content='Tingbot lives in your home or on your desk. It uses your Raspberry Pi to make fun things, get coding or share creative projects.' name='description'>
+  <title>
+    Tingbot: A NORD collective project
+  </title>
+
+  <meta name="description" content="Tingbot lives in your home or on your desk. It uses your Raspberry Pi to make fun things, get coding or share creative projects.">
+
+  <style>
+
+  @import url(miniset2/stylesheet.css);
+
+  body {
+    background-color: white;
+
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23px;
+
+    position: relative;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  .logo {
+    margin: 0 auto;
+    width: 330px;
+    max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  .well {
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    border: none;
+    border-radius: 0;
+    padding: 12px;
+    padding-bottom: 15px;
+  }
+
+  .well-2 {
+    font-family: 'miniset2regular';
+    font-size: 24px;
+    text-align: left;
+    color: rgb(255,255,255);
+    line-height: 20px;
+    padding-top: 85px;
+    padding-bottom: 15px;
+  }
+
+  input {
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0;
+  }
+
+  .input-mail {
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    background-color: white;
+    color: rgb(0,169,255);
+    margin-top: 20px;
+  }
+
+  h2 {
+    font-family: 'miniset2regular';
+    font-size: 22.5px;
+    text-align: center;
+    -webkit-font-smoothing: none;
+    color: rgb(0,169,255);
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgb(240,240,240);
+    display: table;
+    margin: auto;
+    margin-bottom: 40px;
+    line-height: 30px;
+  }
+  h3 {
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5em;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  h5 {
+    font-family: 'miniset2regular';
+    font-size: 15px;
+    text-align: center;
+    -webkit-font-smoothing: none;
+    color: rgb(0,169,255);
+    line-height: 20px;
+  }
+
+  h6 {
+    font-size: 30px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.4em;
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+
+  p {
+
+  }
+  .lead {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 1.3;
+    color: white;
+  }
+  .lead strong {
+    font-weight: 400;
+  }
+  a.nostyle {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  a.nostyle {
+
+  }
+  form {
+    margin: 0;
+  }
+  
+  .nord {
+    letter-spacing: 0.2em;
+  }
+
+  .spacer-mini {
+    width: 100%;
+    height: 12%;
+  }
+
+  .row {
+    max-width: 1050px;
+    margin: auto;
+  }
+
+  .row-top {
+    margin: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .row-fullbleed {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+  }
+
+  .row-footer {
+    width: 100vw;
+    background-color: rgb(240,240,240);
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 30px;
+    overflow: hidden;
+  }
+
+  .fullbleed-image {
+    background-size: cover;
+    background-position: center;
+    max-height: 500px;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+  }
+
+  .fullbleed-image-top {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+  }
+
+  .fullbleed-text {
+    font-size: 30px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+    line-height: 1.4em;
+    text-align: center;
+    color: white;
+  }
+
+
+  .section7 {
+    overflow: hidden;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .section10-vimeo {
+    overflow: hidden;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .image-tingit {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-nord {
+    text-align: left;
+    max-height: 30px;
+  }
+
+  .section5-text {
+    margin-top: 7%;
+    padding-right: 10%;
+    padding-bottom: 30px;
+  }
+
+  .section5-text2 {
+    margin-top: 2%;
+    padding-right: 10%;
+    padding-bottom: 30px;
+  }
+
+  .section5-text3 {
+    margin-top: 2%;
+    padding-right: 10%;
+    padding-left: 40px;
+    padding-bottom: 30px;
+  }
+
+  .section2-ad {
+    margin-top: 6%;
+    max-width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section2-get-tide {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'miniset2regular';
+    font-size: 15px;
+    text-align: center;
+    -webkit-font-smoothing: none;
+    line-height: 20px;
+  }
+
+  .section2-footer {
+    height: 50px;
+    font-size: 14px;
+    text-align: left;
+    border-bottom: 1px solid rgb(200,200,200);
+    margin-bottom: 15px;
+  }
+
+  .footer-column {
+    margin-bottom: 5%;
+  }
+
+  .section2-footer2 {
+    padding-left: 0;
+    max-width: 180px;
+    margin-left: 50px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .footer-heading {
+/*    padding-left: 0;
+    margin-left: 50px;
+    margin-right: 20px;*/
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+
+  .section4-email {
+    margin: auto;
+  }
+
+  .section12-roadmap {
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+
+  .arrow-down {
+  width: 0; 
+  height: 0; 
+  margin-left: 49%;
+  margin-top: 62vh;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+}
+
+
+  .row-footer a {
+    color: inherit;
+    font-size: 14px;
+  }
+
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="viewport-units-buggyfill.js"></script>
+
+  <script>window.viewportUnitsBuggyfill.init();</script>
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34385325-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+
+</head>
+<body>
+  <div class="row-fullbleed">
+    <div class="fullbleed-image-top hidden-xs" style="height: 90vh; background-image: url(images/tingbot-cover-desktop-web.jpg);">
       <div class='logo'>
         <img class='img-responsive' src='logo.png'>
       </div>
-      <div class='visible-xs-block' style='height:150px'></div>
-      <div class='row'>
+      <div class='visible-xs-block' style='height:200px'></div>
+      <div class='row-top'>
         <div class='col-sm-3'>
           <p class='lead'>
             Has your Raspberry Pi lost its tang?
@@ -133,21 +387,15 @@
         </div>
         <div class='col-sm-3 col-sm-offset-6'>
           <div class='well'>
-            <h3 style='margin-top:0;'>
-              Excited about Tingbot?
-            </h3>
-            <h4>
-              Get involved!
-            </h4>
+            <span style="font-family: 'miniset2regular'; font-size: 17px; line-height: 35px; -webkit-font-smoothing: none; color: rgb(0,169,255);">Excited about Tingbot?</span><br>
             <p>
+              <span style="font-weight: 400;">Get involved!</span><br>
               Drop us an email:
-              <a class='nostyle' href='mailto:hello@tingbot.io'>
-                hello@tingbot.io
+              <a class='nostyle' href='mailto:hello@tingbot.com'>
+                hello@tingbot.com
               </a>
             </p>
-            <h4>
-              Sign up for our newsletter:
-            </h4>
+            <span style="font-weight: 400;">Sign up for our newsletter:</span><br>
             <div class='mc_embed_signup'>
               <form action='http://tingbot.us9.list-manage.com/subscribe/post?u=b8440d6a92dc8fa91a14d4e39&amp;amp;id=5382b4e26e' class='validate' id='mc-embedded-subscribe-form' method='post' name='mc-embedded-subscribe-form' novalidate>
                 <input class='required email' id='mce-EMAIL' name='EMAIL' placeholder='you@email.com' type='email' value=''>
@@ -160,35 +408,288 @@
           </div>
         </div>
       </div>
-      <div class='hidden-xs' style='height:100px'></div>
-      <div class='row'>
-        <div class='col-sm-4 col-sm-offset-4'>
-          <div class='row'>
-            <div class='col-xs-6'>
-              <div class='hidden-xs' style='height:15px'></div>
-              In the meantime, check out our release app >
-            </div>
-            <div class='col-xs-6'>
-              <a href='http://ting.it'>
-                <img src='sd.png' width='96'>
+      <div class="arrow-down"></div>
+    </div>
+    <div class="fullbleed-image-top visible-xs" style="height: 820px; background-image: url(images/tingbot-cover-mobile-web.jpg);">
+      <div class='logo'>
+        <img class='img-responsive' src='logo.png'>
+      </div>
+      <div class='visible-xs-block' style='height:170px'></div>
+      <div class='row-top'>
+        <div class='col-sm-3'>
+          <p class='lead'>
+            Has your Raspberry Pi lost its tang?
+          </p>
+          <p class='lead'>
+            <strong>Tingbot</strong> is the most fun you'll have with your clothes on.
+          </p>
+        </div>
+        <div class='col-sm-3 col-sm-offset-6'>
+          <div class='well'>
+            <span style="font-family: 'miniset2regular'; font-size: 17px; line-height: 35px; -webkit-font-smoothing: none; color: rgb(0,169,255);">Excited about Tingbot?</span><br>
+            <p>
+              <span style="font-weight: 400;">Get involved!</span><br>
+              Drop us an email:
+              <a class='nostyle' href='mailto:hello@tingbot.com'>
+                hello@tingbot.com
               </a>
+            </p>
+            <span style="font-weight: 400;">Sign up for our newsletter:</span><br>
+            <div class='mc_embed_signup'>
+              <form action='http://tingbot.us9.list-manage.com/subscribe/post?u=b8440d6a92dc8fa91a14d4e39&amp;amp;id=5382b4e26e' class='validate' id='mc-embedded-subscribe-form' method='post' name='mc-embedded-subscribe-form' novalidate>
+                <input class='required email' id='mce-EMAIL' name='EMAIL' placeholder='you@email.com' type='email' value=''>
+                <div class='mc_hidden' style='position: absolute; left: -5000px;'>
+                  <input name='b_b8440d6a92dc8fa91a14d4e39_5382b4e26e' tabindex='-1' type='text' value=''>
+                  <input type='submit'>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-      <!-- spacer for footer -->
-      <div style='height:80px'></div>
-      <footer>
-        <div class='pull-left'>
-          <img class='pull-left' src='raspberry.png' style='margin-right:12px;' width='25'>
-          Tingbot is powered by <br/>
-          the Raspberry Pi
-        </div>
-        <div class='pull-right nord'>
-          <br/>
-          &copy; 2014 NORD
-        </div>
-      </footer>
     </div>
-  </body>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 section12">
+      <h6><span style="color:rgb(0,169,255)">Tingbot</span> lives in your home or on your desk; an internet-connected product.</h6>
+    </div>
+
+    <div class="col-sm-1 section1"></div>
+    <div class="col-sm-10 section10-vimeo">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="//player.vimeo.com/video/117383761?color=ffffff&byline=0&portrait=0"class="embed-responsive-item"
+        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-sm-1 section1"></div>
+  </div>
+  <div class="spacer-mini"></div>
+
+  <div class="row-fullbleed hidden-xs">
+    <div class="fullbleed-image" style="background-image: url(images/tabletop-desktop-web.jpg); height: 600px">
+      <div class="fullbleed-text" style="margin-top: 190px;">Make fun things, get coding or share creative projects.<br>
+        Tingbot is limited only by your imagination.
+      </div>
+      <div class="col-sm-10">
+      </div>
+      <a href="http://ellismhairicameron.com" target="_blank">
+      <div class="col-sm-2">
+        <div class="button" style="height: 150px; background-color: rgba(0,0,0,0);">
+      </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row-fullbleed visible-xs">
+    <div class="fullbleed-image" style="background-image: url(images/tabletop-mobile-web.jpg); height: 500px">
+      <div class="fullbleed-text" style="margin-top: 100px; padding-left: 30px; padding-right: 30px;">Make fun things, get coding or share creative projects.<br><br>
+        Tingbot is limited only by your imagination.
+      </div>
+    </div>
+  </div>
+
+
+  <div class="spacer-mini"></div>
+
+
+  <h2>What can Tingbot do?</h2>
+  <h3>Tingbot is designed for novel and new experiences.</h3>
+  <div class="row">
+    <div class="col-sm-5 section5-text">
+      To demonstrate Tingbot's capabilities we've built <a href="http://ting.it" target="_blank"><span style="color:rgb(0,169,255)">Ting.it</span></a> - a new way to make personal, playful animated expressions and share them with others.<br>
+      <br>
+      Tingbot is the best way to experience this.
+    </div>
+    <div class="col-sm-5 section5">
+      <img class="image-tingit" src="images/tingit-gif.gif" />
+    </div>
+    <div class="col-sm-2 section2-ad">
+      <a href="http://ting.it" target="_blank">
+        <img class="image-tingit" src="images/bateman.gif" />
+        <h5>Try Ting.it now!</h5></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-7 section6">
+      </div>
+      <div class="col-sm-3 section2 hidden-xs" style="margin-top: 50px; margin-bottom: 30px;">
+        <img class="image-tingit" src="images/arrows.png" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-5 section5-text">
+        As well as <a href="http://ting.it" target="_blank"><span style="color:rgb(0,169,255)">Ting.it</span></a> we are creating a bunch of other great sample projects for you to try out or hack.<br>
+        <br>
+        This library will grow over time as more of you make more cool things with <span style="color:rgb(0,169,255)">Tide</span>.<br>
+      </div>
+      <div class="col-sm-7 hidden-xs" style="padding-right: 50px; margin-bottom: 30px;">
+        <img class="image-tingit" src="images/tingbot-doodles-landscape.png" />
+      </div>
+      <div class="col-sm-2 section2 visible-xs" style="padding: 30px;">
+        <img class="image-tingit" src="images/tingbot-doodles-portrait.png" />
+      </div>
+    </div>
+
+    <div class="spacer-mini"></div>
+
+    <div class="spacer-mini" style="background-color: rgb(245,245,245);"></div>
+
+    <div class="row-fullbleed" style="background-color: rgb(245,245,245);">
+      <h2>
+        Great! Let's get started
+      </h2>
+      <h3>
+        Run things on Tingbot quick and simple with Tide
+      </h3>
+      <div class="row" style="background-color: rgb(245,245,245);">
+        <div class="col-sm-10 section10">
+          <img class="image-tingit" src="images/tingtide-2.png"/>
+        </div>
+        <div class="col-sm-2 section2-get-tide">
+          <a href="mailto:no-hello@tingbot.com?subject=Get Tide" target="_blank">
+          <img class="image-tingit" src="images/tidewave.gif"/>
+          <span style="color: rgb(255,0,70);">Get Tide!</span></a>
+        </div>
+        <div class="col-sm-5" style="padding-right: 50px; padding-top: 30px; margin-bottom: 50px;">
+          <strong>Tingbot</strong> is a kit product for experiencing fun projects.<br>
+          <br>
+          Our hardware and OS builds your Raspberry Pi into a platform for creative applications that you or others have made.<br>
+          <br>
+          Make things for it using Tide.<br>
+        </div>
+        <div class="col-sm-5" style="padding-right: 50px; padding-top: 30px; margin-bottom: 100px;">
+          <strong>Tide</strong> is a development  environment for Tingbot.<br>
+          <br>
+          Download or create apps and run them on your Tingbot in seconds.<br>
+          <br>
+          Our clever libraries make writing your own projects for Tingbot so simple your gran could do it.<br>
+          <br>
+          Test your code in the simulator or upload to Tingbot at the click of a button.
+        </div>
+      </div>
+    </div>
+
+
+    <div class="spacer-mini"></div>
+
+
+    <div class="row">
+      <div class="col-sm-12 section12">
+        <h2>The Tingbot team</h2>
+      </div>
+      <div class="col-sm-5 section5-text2">
+        <h4>About the project</h4>
+        Tingbot is a project by <a href="http://nordcollective.com" target="_blank"><span style="color:rgb(0,169,255)">NORD collective</span></a>, a team of designers and developers who enjoy creating things together.<br>
+        <br>
+        Initially, we created Tingbot as a fun way to experience <a href="http://ting.it" target="_blank"><span style="color:rgb(0,169,255)">Ting.it</span></a> but it didn't take us long to realise the platform we'd built could be used for all sorts of exciting projects.<br>
+        <br>
+        On the 25th and 26th of April we will be showing Tingbot in it's current form at <a href="http://www.makerfaireuk.com/makers/meet-the-makers/tingbot/" target="_blank"><span style="color:rgb(0,169,255)">Maker Faire UK</span></a> in Newcastle. Come and find us!<br>
+      </div>
+      <div class="col-sm-7 section7">
+        <img class="image-tingit" src="images/tingteam.jpg" />
+      </div>
+    </div>
+
+    <div class="spacer-mini"></div>
+
+    <div class="row">
+      <div class="col-sm-5 section5-text2">
+        <h4>
+          What comes next?
+        </h4>
+        After Maker Faire, we are keen to make Tingbot available to all of you.<br>
+        <br>
+        So far this is the plan going forward:<br>
+        <br>
+        <strong>Maker Faire UK</strong> - a chance to introduce people to Tingbot and invite feedback<br>
+        <br>
+        <strong>Closed Beta kits</strong> - the first time others will be let loose with the product outside of our team in order for us to make the product as best as it can be<br>
+        <br>
+        <strong>Fund raising</strong> - a crowdfunding campaign or other method to finance further production, including:<br>
+        - hardware development (case and components)<br>
+        - software development (OS, Tide)<br>
+        - first product release<br>
+      </div>
+      <div class="col-sm-7 section7 visible-xs">
+        <img class="image-tingit" src="images/tingbot-kit-long.jpg" />
+      </div>
+      <div class="col-sm-7 section7 hidden-xs">
+        <img class="image-tingit" src="images/tingbot-kit.jpg" />
+      </div>
+    </div>
+
+    <div class="spacer-mini"></div>
+
+
+    <div class="row-fullbleed" style="background-color: rgb(0,169,255); height: 350px;">
+      <div class="col-sm-3 section3">
+      </div>
+      <div class="col-sm-4 section4-email">
+        <div class='well-2'>
+          <span style="-webkit-font-smoothing: none;">Excited about tingbot?</span><br>
+          <br>
+          <span style="color: white; font-size: 20px; text-align: left; font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 200; line-height: 40px;">Sign up for our newsletter:</span>
+          <div class='input-mail'>
+            <form action='http://tingbot.us9.list-manage.com/subscribe/post?u=b8440d6a92dc8fa91a14d4e39&amp;amp;id=5382b4e26e' class='validate' id='mc-embedded-subscribe-form' method='post' name='mc-embedded-subscribe-form' novalidate>
+              <input class='required email' id='mce-EMAIL' name='EMAIL' placeholder='you@email.com' type='email' value='' style="padding: 20px;">
+              <div class='mc_hidden' style='position: absolute; left: -5000px;'>
+                <input name='b_b8440d6a92dc8fa91a14d4e39_5382b4e26e' tabindex='-1' type='text' value=''>
+                <input type='submit'>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 section4-email hidden-xs">
+        <img class="image-tingit" src="images/mail-doodle.png" style="max-width: 190px; margin-top:50px" />
+      </div>
+    </div>
+
+    <div class="row-footer">
+      <div class="clearfix">
+        <div class="col-sm-2 col-sm-offset-1 footer-heading">
+          A PROJECT BY:
+        </div>
+      </div>
+      <div class="col-sm-2 col-sm-offset-1 footer-column" style="font-size: 14px;">
+        <div class="section2-footer">
+          <img class="image-nord" src="images/nord-logo.svg" />
+        </div>
+        <a href="http://benpawle.co.uk" target="_blank">Ben Pawle</a><br>
+        Ken Smeed<br>
+        <a href="http://getmixim.com" target="_blank">Joe Rickerby</a><br>
+        <a href="https://www.linkedin.com/in/smeed" target="_blank">Duncan Smeed</a><br>
+        <a href="https://uk.linkedin.com/pub/philip-gilbanks/25/534/975" target="_blank">Philip Gilbanks</a><br>
+      </div>
+      <div class="col-sm-2 footer-column">
+        <div class="section2-footer" style="padding-top: 12px; font-size: 14px;">
+          <img class="image-nord" src="images/and-friends.svg" style="width: 95px;"/>
+        </div>
+        <a href="http://www.joindouble.com" target="_blank">Ben Greencock</a><br>
+        <a href="https://twitter.com/herebytheway" target="_blank">Ashley Johnston</a><br>
+        <a href="https://twitter.com/Kavism" target="_blank">Kav Kavanagh</a><br>
+        <a href="http://deanpauley.co.uk" target="_blank">Dean Pauley</a><br>
+        <a href="http://iandera.com" target="_blank">Ian Dera</a><br>
+      </div>
+      <div class="col-sm-2 footer-column">
+        <div class="section2-footer" style="padding-top: 15px; font-size: 14px;">
+          <strong>Tingbot project</strong>
+        </div>
+        <a href="http://tingbot.com" target="_blank">Tingbot.com</a><br>
+        <a href="http://ting.it" target="_blank">Ting.it</a><br>
+        <a href="http://nordcollective.com" target="_blank">NORD collective</a><br>
+        <a href="http://github.com/tingbot" target="_blank">GitHub</a><br>
+      </div>
+      <div class="col-sm-2 footer-column" style="font-size: 14px;">
+        <div class="section2-footer" style="padding-top: 15px;">
+          <strong>Contact us</strong>
+        </div>
+        hello at tingbot dot com
+      </div>
+    </div>
+  </div>
+</body>
 </html>
