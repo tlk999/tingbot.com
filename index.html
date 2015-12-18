@@ -36,6 +36,13 @@
     margin-top: 50px;
     margin-bottom: 60px;
   }
+  .logo-xs {
+    margin: 0 auto;
+    width: 280px;
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
   .well {
     font-size: 16px;
     font-family: 'Oxygen', sans-serif;
@@ -340,10 +347,30 @@
   border-top: 8px solid white;
 }
 
-
   .row-footer a {
     color: inherit;
     font-size: 14px;
+  }
+
+  .nav {
+    position: absolute;
+    right: 38px;
+    top: 38px;
+    color: white;
+    text-align: center;
+  }
+
+  .nav a, .nav-xs a {
+    color: white;
+  }
+
+  .nav-item {
+    margin: 0 10px;
+    display: inline-block;
+  }
+
+  .nav-xs {
+    text-align: center;
   }
 
   </style>
@@ -382,6 +409,28 @@
 <body>
   <div class="row-fullbleed">
     <div class="fullbleed-image-top hidden-xs" style="height: 90vh; background-image: url(images/tingbot-cover-desktop-web-funded.jpg);">
+      <div class="nav clearfix">
+        <div class="nav-item">
+          <a href="https://www.kickstarter.com/projects/744235676/tingbot-raspberry-pi-made-fun/">
+            Kickstarter
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="http://ocean.tingbot.com/">
+            Ocean
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="http://github.com/tingbot/tide">
+            Tide
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="http://github.com/tingbot">
+            GitHub
+          </a>
+        </div>
+      </div>
       <div class='logo'>
         <img class='img-responsive' src='logo.png'>
       </div>
@@ -425,11 +474,33 @@
       <div class="arrow-down"></div>
     </div>
     <div class="fullbleed-image-top visible-xs" style="background-image: url(images/tingbot-cover-mobile-web-funded.jpg);">
-      <div class='logo'>
+      <div class='logo-xs'>
         <img class='img-responsive' src='logo.png'>
       </div>
+      <div class="nav-xs clearfix">
+        <div class="nav-item">
+          <a href="https://www.kickstarter.com/projects/744235676/tingbot-raspberry-pi-made-fun/">
+            Kickstarter
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="http://ocean.tingbot.com/">
+            Ocean
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="https://github.com/tingbot/tide/releases/latest">
+            Tide
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="http://github.com/tingbot">
+            GitHub
+          </a>
+        </div>
+      </div>
       <a href="https://www.kickstarter.com/projects/744235676/tingbot-raspberry-pi-made-fun" target="_blank">
-        <div class='visible-xs-block' style='height:60vw'></div>
+        <div class='visible-xs-block' style='height:90vw'></div>
       </a>
       <div class='row-top'>
         <div class='col-sm-3'>
