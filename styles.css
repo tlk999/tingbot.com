@@ -14,22 +14,23 @@ body {
   position: relative;
   min-height: calc(100vh - 90px);
   background-color: #bbb;
-  background-image: url(images/tingbot-cover-desktop.jpg);
+  background-image: url(images/tingbot-temp-background-copy.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-position: top;
   margin-left: 0;
   margin-right: 0;
 }
 
-.nav {
-  padding-top: 35px;
-  padding-right: 38px;
+.page-margins {
+  margin: 0 30px;
+}
+
+.navbar{
   color: rgb(0,169,255);
-  text-align: right;
-  background-color: white;
-  width: 100%;
-  height: 90px;
 }
 
 .nav-item {
@@ -81,7 +82,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   margin-bottom: 10px;
-  padding: 5px 10px;
+  padding: 5px 5px;
   width: 100%;
 }
 #mailchimp input.email {
@@ -110,14 +111,14 @@ body {
 
 .perspective-box {
   position: absolute;
-  width: 160px;
-  height: 120px;
-  top: 50%;
+  width: 320px;
+  height: 240px;
+  top: 154px;
   left: 50%;
-  margin-left: -80px;
-  margin-top: -60px;
+  margin-left: -137px;
   background: red;
-  transform: perspective( 1200px ) rotateY( 30deg ) rotateZ( -15deg );
+  background-image: url(images/web-test.gif);
+  transform: perspective( 1310px ) rotateZ( -21deg ) rotateY( 397deg ) rotateX( -16deg ) scale(0.5);
 }
 
 .press-badge {

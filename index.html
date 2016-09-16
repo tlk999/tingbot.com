@@ -5,6 +5,7 @@
     <link href="styles.css" rel="stylesheet">
     <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
     <meta content='Transform your Raspberry Pi into a platform for creative applications.' name='description'>
@@ -21,77 +22,78 @@
 <body>
     {% include nav.html %}
 
-    <div class="hero-image hidden-xs">
-        <div class="perspective-box"></div>
-        <div class="spacer" style="height: 180px;"></div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3">
-                    <p class="strapline">Tingbot transforms your Raspberry Pi into an internet connected product you can make apps for, really easily.</p>
-                    <br>
-                    Right now, we're shipping the first Tingbots to our Kickstarter backers. We're building an exiciting new site and Tingbot ecosystem too so watch this space :)<br>
-                    <br>
-                    Check out the links below to learn more about Tingbot.
-                </div>
-                <div class="col-sm-6">
-                </div>
-                <div class="col-sm-3">
-                    <div class="mailing-box">
-                        <span style="font-family: 'miniset2regular'; font-size: 20px; color: white;">Get Tingbot!</span><br>
-                        Be the first to know when Tingbot pre-orders go live<br>
-                        <!-- Begin MailChimp Signup Form -->
-                        <div id="mailchimp">
-                            <form action="http://tingbot.us9.list-manage.com/subscribe/post?u=b8440d6a92dc8fa91a14d4e39&amp;id=5382b4e26e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                <div id="mc_embed_signup_scroll">
-
-                                    <input type="text" size="30" value="Full name" name="FNAME" class="" id="mce-FNAME" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-
-                                    <input type="email" size="30" value="you@email.com" name="EMAIL" class="required email" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-
-                                    <div id="mce-responses" class="clear">
-                                        <div class="response" id="mce-error-response" style="display:none"></div>
-                                        <div class="response" id="mce-success-response" style="display:none"></div>
-                                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ac0aab500277bbbbddf4d9a06_32a0d6c1fc" tabindex="-1" value=""></div>
-                                    <input type="submit" value="Sign me up!" name="subscribe" id="mc-embedded-subscribe" class="button">
-                                </div>
-                            </form>
-                        </div>
+    <div class="hero-image">
+        <div class="spacer" style="height: 130px;"></div>
+        <div class="page-margins">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3" style="background-color:rgba(255,255,255,0.8); padding-top:10px; padding-bottom:10px;">
+                        <p class="strapline">Tingbot transforms your Raspberry Pi into an internet connected product you can make apps for, really easily.</p>
+                        <br>
+                        Right now, we're shipping the first Tingbots to our Kickstarter backers. Stand by - our new site is coming soon :)<br>
+                        <br>
+                        Check out the links below to learn more about Tingbot.
                     </div>
-                    <!--End mc_embed_signup-->
+                    <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="mailing-box">
+                            <span style="font-family: 'miniset2regular'; font-size: 20px; color: white;">Get tingbot!</span><br>
+                            Be the first to know when Tingbot pre-orders go live<br>
+                            <!-- Begin MailChimp Signup Form -->
+                            <div id="mailchimp">
+                                <form action="http://tingbot.us9.list-manage.com/subscribe/post?u=b8440d6a92dc8fa91a14d4e39&amp;id=5382b4e26e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div id="mc_embed_signup_scroll">
+
+                                        <input type="text" size="30" value="Full name" name="FNAME" class="" id="mce-FNAME" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+
+                                        <input type="email" size="30" value="you@email.com" name="EMAIL" class="required email" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+
+                                        <div id="mce-responses" class="clear">
+                                            <div class="response" id="mce-error-response" style="display:none"></div>
+                                            <div class="response" id="mce-success-response" style="display:none"></div>
+                                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ac0aab500277bbbbddf4d9a06_32a0d6c1fc" tabindex="-1" value=""></div>
+                                        <input type="submit" value="Sign me up!" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--End mc_embed_signup-->
+                    </div>
                 </div>
-            </div>
-            <div class="spacer" style="height: 100px;"></div>
-            <div class="text-center">
-                <a class="no-hover" href="https://www.kickstarter.com/projects/744235676/tingbot-raspberry-pi-made-fun/" target="_blank">
-                    <img class="press-badge" src='images/press-badges/press-badge-01.png'>
-                </a>
-                <a class="no-hover" href="https://techcrunch.com/2015/11/27/tingbot/" target="_blank">
-                    <img class="press-badge" src='images/press-badges/press-badge-02.png'>
-                </a>
-                <a class="no-hover" href="http://arstechnica.co.uk/gadgets/2016/04/maker-faire-uk-2016-review/" target="_blank">
-                    <img class="press-badge" src='images/press-badges/press-badge-03.png'>
-                </a>
-                <a class="no-hover" href="https://www.producthunt.com/tech/tingbot" target="_blank">
-                    <img class="press-badge" src='images/press-badges/press-badge-04.png'>
-                </a>
-                <a class="no-hover" href="http://www.theregister.co.uk/2015/11/12/raspberry_pi_tingbot/" target="_blank">
-                    <img class="press-badge" src='images/press-badges/press-badge-05.png'>
-                </a>
-                <a class="no-hover" href="http://www.makerfaireuk.com/makers/tingbot/" target="_blank">
-                    <img class="press-badge" src='images/press-badges/press-badge-06.png'>
-                </a>
-                <a class="no-hover" href="https://www.raspberrypi.org/magpi/issues/40/" target="_blank">
-                    <img class="press-badge" src='images/press-badges/press-badge-07.png'>
-                </a>
-            </div>
-            <div class="text-center">
-                <a class="no-hover" href="https://twitter.com/thetingbot" target="_blank">
-                    <img class="social-badge" src='images/social-badges/twitter.png'>
-                </a>
-                <a class="no-hover" href="https://www.facebook.com/thetingbot/" target="_blank">
-                    <img class="social-badge" src='images/social-badges/facebook.png'>
-                </a>
+                <div class="spacer" style="height: 80px;"></div>
+                <div class="text-center">
+                    <a class="no-hover" href="https://www.kickstarter.com/projects/744235676/tingbot-raspberry-pi-made-fun/" target="_blank">
+                        <img class="press-badge" src='images/press-badges/press-badge-01.png'>
+                    </a>
+                    <a class="no-hover" href="https://techcrunch.com/2015/11/27/tingbot/" target="_blank">
+                        <img class="press-badge" src='images/press-badges/press-badge-02.png'>
+                    </a>
+                    <a class="no-hover" href="http://arstechnica.co.uk/gadgets/2016/04/maker-faire-uk-2016-review/" target="_blank">
+                        <img class="press-badge" src='images/press-badges/press-badge-03.png'>
+                    </a>
+                    <a class="no-hover" href="https://www.producthunt.com/tech/tingbot" target="_blank">
+                        <img class="press-badge" src='images/press-badges/press-badge-04.png'>
+                    </a>
+                    <a class="no-hover" href="http://www.theregister.co.uk/2015/11/12/raspberry_pi_tingbot/" target="_blank">
+                        <img class="press-badge" src='images/press-badges/press-badge-05.png'>
+                    </a>
+                    <a class="no-hover" href="http://www.makerfaireuk.com/makers/tingbot/" target="_blank">
+                        <img class="press-badge" src='images/press-badges/press-badge-06.png'>
+                    </a>
+                    <a class="no-hover" href="https://www.raspberrypi.org/magpi/issues/40/" target="_blank">
+                        <img class="press-badge" src='images/press-badges/press-badge-07.png'>
+                    </a>
+                </div>
+                <div class="text-center">
+                    <a class="no-hover" href="https://twitter.com/thetingbot" target="_blank">
+                        <img class="social-badge" src='images/social-badges/twitter.png'>
+                    </a>
+                    <a class="no-hover" href="https://www.facebook.com/thetingbot/" target="_blank">
+                        <img class="social-badge" src='images/social-badges/facebook.png'>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
