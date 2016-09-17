@@ -4,7 +4,7 @@ cd "$(dirname "$0")"
 
 (
     sleep 1;
-    open http://localhost:8000
+    open http://localhost:4000
 ) &
 
-python -m SimpleHTTPServer 8000
+jekyll serve

@@ -1,106 +1,189 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600);
-      @import url(miniset2/stylesheet.css);
-      
-      body {
-        background-image: url(background-5.jpg);
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-color: #070605;
-      
-        color: white;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 16px;
-        font-weight: 200;
-      
-        max-width: 1200px;
-        margin: 0 auto;
-      
-        position: relative;
-        -webkit-font-smoothing: subpixel-antialiased;
-      }
-      @media
-      only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (   min--moz-device-pixel-ratio: 2),
-      only screen and (     -o-min-device-pixel-ratio: 2/1),
-      only screen and (        min-device-pixel-ratio: 2),
-      only screen and (                min-resolution: 192dpi),
-      only screen and (                min-resolution: 2dppx) { 
-        body {
-          background-image: url(background-5@2x.jpg);
-          background-size: 3000px 2000px
-        }
-      }
-      @media only screen and (max-width : 768px) {
-        body {
-          background-size: 2300px;
-        }
-      }
-      .logo {
-        margin: 0 auto;
-        width: 330px;
-        max-width: 100%;
-        margin-top: 50px;
-        margin-bottom: 60px;
-      }
-      .well {
-        background-color: rgba(0,0,0,0.6);
-        border: none;
-        border-radius: 0;
-        padding: 12px;
-        padding-bottom: 15px;
-      }
-      input {
-        background: transparent;
-        width: 100%;
-        border: none;
-        border-bottom: 1px solid #94c9e0;
-        outline: none;
-        padding-bottom: 5px;
-        border-radius: 0;
-      }
-      h3 {
-        font-family: 'miniset2regular';
-        font-size: 17px;
-        -webkit-font-smoothing: none;
-        color: #45caf3;
-        margin-bottom: 20px;
-      }
-      h4 {
-        font-weight: 400;
-        font-size: 16px;
-        margin-top: 20px;
-        margin-bottom: 4px;
-      }
-      p {
-      
-      }
-      .lead {
-        font-weight: 300;
-        font-size: 26px;
-        line-height: 1.3;
-      }
-      .lead strong {
-        font-weight: 400;
-      }
-      a.nostyle {
-        color: inherit;
-        text-decoration: inherit;
-      }
-      a.nostyle {
-      
-      }
-      form {
-        margin: 0;
-      }
-      footer {
-        position: absolute;
-        bottom: 0;
-        left:15px;
-        right:15px;
-        font-size: 10px;
-        line-height: 1.6;
-        height: 60px;
-      }
-      .nord {
-        letter-spacing: 0.2em;
-      }
+@import url(miniset2/stylesheet.css);
+
+body {
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+  position: relative;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+a {
+  color: rgb(0,169,255);
+}
+
+a:hover, a:focus {
+  color: rgb(0,169,255);
+  text-decoration: underline;
+}
+
+form {
+  margin: 0;
+}
+
+.hero-image-desktop {
+  position: relative;
+  min-height: calc(100vh - 90px);
+  background-image: url(images/tingbot-temp-background-copy.jpg);
+  background-color: #bbb;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: top;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero-image-mobile {
+  position: absolute;
+  background-image: url(images/t ingbot-temp-background-mobile-2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+}
+
+.page-margins {
+  margin: 0 30px;
+}
+
+.navbar {
+  color: rgb(0,169,255);
+  margin: 0;
+  padding: 19px 0;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: rgb(0,169,255);
+}
+
+.nav-item {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.nav-item a {
+  color: rgb(0,169,255);
+}
+
+.nav-item a:hover {
+  color: inherit;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  padding-left:30px;
+}
+
+.tingbot-logo {
+  position: relative;
+  top: -3px;
+  font-family: 'miniset2regular';
+  font-size: 42px;
+  text-align: left;
+  color: rgb(0,169,255);
+}
+
+.strapline {
+  color: rgb(0,169,255);
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.mailing-box {
+  background-color: rgba(30,40,65,0.9);
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.mailing-box-header {
+  margin-top: 0;
+  font-family: 'miniset2regular';
+  font-size: 20px;
+  color: white;
+}
+
+#mailchimp {
+  color: #1E2841;
+  margin-top: 3px;
+  }
+  
+#mailchimp input {
+  border: medium none;
+  color: rgba(30,40,65,0.5);
+  background-color: rgb(255,255,255);
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 5px 5px;
+  width: 100%;
+}
+#mailchimp input.email {
+  background: rgba(255,255,255,1);
+}
+
+#mailchimp input.name {
+  background: rgba(255,255,255,0.1);
+}
+
+#mailchimp input[type="submit"] {
+  background: rgba(255,255,255,0);
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'miniset2regular';
+  padding: 8px 0;
+}
+
+#mailchimp input[type="submit"]:hover {
+  background: rgb(0,169,255);
+  border: 2px solid rgb(0,169,255);
+}
+
+.perspective-box {
+  position: absolute;
+  width: 320px;
+  height: 240px;
+  top: 154px;
+  left: 50%;
+  margin-left: -137px;
+  background: red;
+  background-image: url(images/web-test.gif);
+  transform: perspective( 1310px ) rotateZ( -21deg ) rotateY( 397deg ) rotateX( -16deg ) scale(0.5);
+}
+
+.press-badge {
+  height: 75px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.social-badge {
+  height: 26px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+a.no-hover:hover {
+  text-decoration: none;
+}
+
+
+
+
+
