@@ -40,10 +40,9 @@ form {
 
 .hero-image-mobile {
   position: absolute;
-  max-width: 100vw;
-  background-image: url(images/tingbot-temp-background-mobile.jpg);
+  background-image: url(images/t ingbot-temp-background-mobile-2.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
   background-position: top;
   margin-left: 0;
   margin-right: 0;
