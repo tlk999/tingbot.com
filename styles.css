@@ -23,11 +23,11 @@ form {
   margin: 0;
 }
 
-.hero-image {
+.hero-image-desktop {
   position: relative;
   min-height: calc(100vh - 90px);
-  background-color: #bbb;
   background-image: url(images/tingbot-temp-background-copy.jpg);
+  background-color: #bbb;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -38,6 +38,18 @@ form {
   margin-right: 0;
 }
 
+.hero-image-mobile {
+  position: absolute;
+  max-width: 100vw;
+  background-image: url(images/tingbot-temp-background-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+}
+
 .page-margins {
   margin: 0 30px;
 }
@@ -45,7 +57,7 @@ form {
 .navbar {
   color: rgb(0,169,255);
   margin: 0;
-  padding: 20px 0;
+  padding: 19px 0;
 }
 
 .navbar-toggle .icon-bar {
