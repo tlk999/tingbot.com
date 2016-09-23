@@ -105,6 +105,7 @@ form {
   color: white;
   padding: 20px;
   font-size: 16px;
+  max-width:350px;
 }
 
 .mailing-box-header {
