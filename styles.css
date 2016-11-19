@@ -1,13 +1,17 @@
 @import url(miniset2/stylesheet.css);
 
+/**********
+* GLOBALS *
+**********/
+
 body {
   color: black;
-  font-family: 'Oxygen', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 23px;
-  position: relative;
-  -webkit-font-smoothing: subpixel-antialiased;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #231f20;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.3;
 }
 
 a {
@@ -22,6 +26,81 @@ a:hover, a:focus {
 form {
   margin: 0;
 }
+
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 38px;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn.btn-transparent {
+  color: white;
+  border: 2px solid white;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+/*********
+* COMMON *
+*********/
+
+.margins {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.margins.narrow {
+  max-width: 800px;
+  padding: 0 40px;
+}
+
+.supernav {
+  color: #eea250;
+}
+
+/******
+* OLD *
+******/
+
+
+/*********
+* SPACERS *
+*********/
+
+.spacer.h10 { height: 10px; }
+.spacer.h15 { height: 15px; }
+.spacer.h20 { height: 20px; }
+.spacer.h30 { height: 30px; }
+.spacer.h40 { height: 40px; }
+.spacer.h50 { height: 50px; }
+.spacer.h60 { height: 60px; }
+.spacer.h70 { height: 70px; }
+.spacer.h80 { height: 80px; }
+.spacer.h90 { height: 90px; }
+.spacer.h100 { height: 100px; }
 
 .hero-image-desktop {
   position: relative;
@@ -183,8 +262,3 @@ form {
 a.no-hover:hover {
   text-decoration: none;
 }
-
-
-
-
-
