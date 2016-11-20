@@ -79,6 +79,14 @@ p {
   color: #eea250;
 }
 
+.expand-image-wrapper {
+  overflow: hidden;
+}
+
+.expand-image {
+  margin: -2vw;
+}
+
 /******
 * OLD *
 ******/

@@ -191,31 +191,96 @@ layout: default
 
 <div class="skew left flat-bottom">
   <div class="skew-outline">
-    <div class="skew-background"
-         style="background-image: url(/images/kit.png);">
-    </div>
+    <div class="skew-background" style="background-color: #d0e3eb"></div>
   </div>
   <div class="skew-content" style="color: white; text-align: right">
     <div class="spacer" style="height: 74px"></div>
     <div class="margins">
       <div class="row">
-        <div class="col-sm-5 col-sm-offset-7">
-          <h1>Tingbot kit</h1>
-          <p>
-            Tingbot comes as part of a kit that you can
-            build yourself. Move your cursor over
-            the components to find out more.
-          </p>
-          <div class="spacer" style="height: 14px"></div>
-          <a class="btn btn-transparent">
-            Buy it now!
-          </a>
+        <div class="col-sm-7">
+          <div class="expand-image-wrapper">
+            <div class="expand-image">
+              <img src="/images/kit-feathered.png" usemap="#kit-map" />
+              <map id="kit-map" name="kit-map">
+                <area data-section-id="kit-section-box" shape="poly"
+                      coords="316,327,411,201,402,172,275,150,170,268,185,298">
+                <area data-section-id="kit-section-jumper" shape="poly"
+                      coords="466,341,396,462,282,434,280,426,352,315,376,312,404,326,446,325">
+                <area data-section-id="kit-section-shoes" shape="poly"
+                      coords="624,177,606,212,519,197,517,168,535,136,620,150">
+              </map>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+
+          <div id="kit-section-default" class="kit-section">
+            <h1>Tingbot kit</h1>
+            <p>
+              Tingbot comes as part of a kit that you can
+              build yourself. Move your cursor over
+              the components to find out more.
+            </p>
+            <div class="spacer" style="height: 14px"></div>
+            <a class="btn btn-transparent">
+              Buy it now!
+            </a>
+          </div>
+          
+          <div id="kit-section-box" class="kit-section">
+            <h1>Box</h1>
+            <p>
+              A handy box for your stuff.
+            </p>
+            <div class="spacer" style="height: 14px"></div>
+            <a class="btn btn-transparent">
+              Buy it now!
+            </a>
+          </div>
+
+          <div id="kit-section-jumper" class="kit-section">
+            <h1>Jumper</h1>
+            <p>
+              Stay warm!
+            </p>
+            <div class="spacer" style="height: 14px"></div>
+            <a class="btn btn-transparent">
+              Buy it now!
+            </a>
+          </div>
+
           <div class="spacer" style="height: 180px"></div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<script>
+  window.addEventListener('load', function () {
+    $('.kit-section').matchHeight();
+
+    function showKitSection(sectionId) {
+      section = document.getElementById(sectionId);
+      console.log({sectionId});
+
+      if (!section) {
+        section = document.getElementById('kit-section-default');
+      }
+
+      $('.kit-section').hide();
+      $(section).show();
+    }
+
+    $('#kit-map area').mouseover(function () {
+      var sectionId = this.dataset.sectionId;
+      showKitSection(sectionId);
+    }).mouseout(function () {
+      showKitSection();
+    });
+
+    showKitSection();
+  })
+</script>
 
 <div class="spacer" style="height: 84px"></div>
 <style>
