@@ -28,3 +28,7 @@ markdown: kramdown
 
 gems:
   - jekyll-seo-tag
+
+exclude:
+  - Gemfile*
+  - open.command
