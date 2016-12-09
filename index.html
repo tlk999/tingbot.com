@@ -755,24 +755,18 @@ layout: default
 </div>
 <script>
   window.addEventListener('load', function () {
-    $('.examples-gallery-item').each(function(index) {
-      var item = this;
-      var dot = $('<div class="examples-gallery-dot"></div>');
-      var dotId = 'examples-gallery-dot-' + index;
-      dot.attr('id', dotId);
-      dot.appendTo('.examples-gallery-dots');
-      item.dataset.dotId = dotId;
+    var lastScrollTime = timestamp();
 
-      dot.click(function () {
-        var offset = item.offsetLeft;
-        var width = item.offsetWidth;
-        $('.examples-gallery-scroller').animate({
-          scrollLeft: offset - width*0.1/0.8,
-        }, 250)
-      })
-    });
+    function animateScrollToItem (item, animationDuration) {
+      animationDuration = animationDuration || 400;
+      var offset = item.offsetLeft;
+      var width = item.offsetWidth;
+      $('.examples-gallery-scroller').animate({
+        scrollLeft: offset - width*0.1/0.8,
+      }, animationDuration)
+    }
 
-    function updateScrollerDots () {
+    function getMiddleItem () {
       var scroller = $('.examples-gallery-scroller')[0];
       var items = $('.examples-gallery-item', scroller);
 
@@ -788,12 +782,60 @@ layout: default
         }
       });
 
+      return middleItem;
+    }
+
+    function updateScrollerDots () {
+      var middleItem = getMiddleItem();
       var dot = $('#' + middleItem.dataset.dotId);
       $('.examples-gallery-dot').removeClass('selected');
       dot.addClass('selected');
     }
 
-    $('.examples-gallery-scroller').on('scroll', updateScrollerDots);
+    function timestamp () {
+      // current time in seconds
+      return new Date().getTime() / 1000;
+    }
+
+    function autoScrollToNext() {
+      var time = timestamp();
+
+      if (time > lastScrollTime + 5.0) {
+        var currentItem = getMiddleItem();
+        var nextItem = $(currentItem).next();
+        if (nextItem.length == 0) {
+          // go back to first
+          nextItem = $('.examples-gallery-item:first-child');
+        }
+        animateScrollToItem(nextItem[0]);
+      }
+    }
+    setInterval(autoScrollToNext, 500);
+
+    $('.examples-gallery-item').each(function (index) {
+      var item = this;
+      var dot = $('<div class="examples-gallery-dot"></div>');
+      var dotId = 'examples-gallery-dot-' + index;
+      dot.attr('id', dotId);
+      dot.appendTo('.examples-gallery-dots');
+      item.dataset.dotId = dotId;
+      item.dataset.index = index;
+
+      dot.click(function () {
+        animateScrollToItem(item, 250);
+      });
+    });
+
+    $('.examples-gallery-scroller').bind('scroll mousedown wheel DOMMouseScroll mousewheel keyup', function(e) {
+      if (e.which > 0 || e.type == "mousedown" || e.type == "mousewheel") {
+        // manual scroll
+        $('.examples-gallery-scroller').stop();
+      }
+
+      lastScrollTime = timestamp();
+      updateScrollerDots();
+    });
+
     $('window').on('resize', updateScrollerDots);
     updateScrollerDots();
   });
