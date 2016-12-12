@@ -1,9 +1,9 @@
 @import url(miniset2/stylesheet.css);
 
 body {
-  color: black;
+  color: white;
   font-family: 'Oxygen', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 23px;
   position: relative;
@@ -26,7 +26,7 @@ form {
 .hero-image-desktop {
   position: relative;
   min-height: calc(100vh - 90px);
-  background-image: url(images/tingbot-temp-background-copy.jpg);
+  background-image: url(images/tingbot-temp-background-copy-3.jpg);
   background-color: #bbb;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -40,7 +40,7 @@ form {
 
 .hero-image-mobile {
   position: absolute;
-  background-image: url(images/tingbot-temp-background-mobile-2.jpg);
+  background-image: url(images/tingbot-temp-background-mobile-3.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top;
@@ -95,7 +95,7 @@ form {
 }
 
 .strapline {
-  color: rgb(0,169,255);
+  color: rgb(255,255,255);
   font-size: 18px;
   line-height: 1.5em;
 }
@@ -171,6 +171,11 @@ form {
   margin: 10px;
   display: inline-block;
   text-align: center;
+  opacity: 0.5;
+}
+
+.buynow {
+  max-width: 250px;
 }
 
 .social-badge {
@@ -178,6 +183,7 @@ form {
   margin: 10px;
   display: inline-block;
   text-align: center;
+  opacity: 0.5;
 }
 
 a.no-hover:hover {
