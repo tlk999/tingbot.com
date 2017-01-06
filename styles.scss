@@ -1,11 +1,25 @@
+---
+---
+
 /**********
 * GLOBALS *
 **********/
 
+html, body, :root {
+  font-size: 20px;
+  overflow-x: hidden;
+
+  @media (max-width: 991px) {
+    font-size: 18px
+  }
+  @media (max-width: 767px) {
+    font-size: 17px;
+  }
+}
+
 body {
   color: black;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
   color: #231f20;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
@@ -26,19 +40,19 @@ form {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 38px;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 18px;
 }
@@ -74,6 +88,7 @@ p {
 .margins.narrow {
   max-width: 800px;
   padding: 0 40px;
+  padding: 0 6vw;
 }
 
 .supernav {
@@ -96,6 +111,20 @@ p {
 /*********
 * SPACERS *
 *********/
+
+.spacer {
+  /**
+   * Use em rather than px for sizing spacers. Then they will scale down in mobile view.
+   */
+  font-size: 1px;
+
+  @media (max-width: 991px) {
+    font-size: 0.7px;
+  }
+  @media (max-width: 767px) {
+    font-size: 0.5px;
+  }
+}
 
 .spacer.h10 { height: 10px; }
 .spacer.h15 { height: 15px; }
@@ -175,14 +204,14 @@ p {
   position: relative;
   top: -3px;
   font-family: 'miniset2regular';
-  font-size: 42px;
+  font-size: 2.1rem;
   text-align: left;
   color: rgb(0,169,255);
 }
 
 .strapline {
   color: rgb(0,169,255);
-  font-size: 18px;
+  font-size: 0.9rem;
   line-height: 1.5em;
 }
 
@@ -190,14 +219,14 @@ p {
   background-color: rgba(30,40,65,0.9);
   color: white;
   padding: 20px;
-  font-size: 16px;
+  font-size: 0.8rem;
   max-width:350px;
 }
 
 .mailing-box-header {
   margin-top: 0;
   font-family: 'miniset2regular';
-  font-size: 20px;
+  font-size: 1rem;
   color: white;
 }
 
@@ -229,7 +258,7 @@ p {
   border: 2px solid white;
   color: white;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.7rem;
   font-weight: 600;
   font-family: 'miniset2regular';
   padding: 8px 0;

@@ -14,11 +14,10 @@ layout: default
       |__/  |__/ \_______/|__/       \______/ 
                                               
                                               
-
 {% endcomment %}
 <style>
   .hero-social-links {
-    font-size: 30px;
+    font-size: 1.5rem;
   }
   .hero-social-link {
     color: white;
@@ -38,16 +37,15 @@ layout: default
   }
   .hero-overlay {
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 544px;
+    height: 509px;
     top: -100px;
-    left: 81px;
+    left: -50px;
   }
   .hero-overlay-layer {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
   }
-
   .hero-button {
     transition: 0.15s all;
   }
@@ -59,18 +57,18 @@ layout: default
 <div class="skew right flat-top">
   <div class="skew-outline">
     <div class="skew-background"
-         style="background-image: url(/images/hero-bg.jpg);
+         style="background-color: #f79027;
                 background-position: top center;
                 background-size: auto;">
     </div>
   </div>
   <div class="skew-content" style="color: white">
     <div class="margins">
-      <div class="spacer" style="height: 60px"></div>
+      <div class="spacer" style="height: 60em"></div>
 
       <img src="images/logo.png" alt="tingbot" style="width: 200px">
 
-      <div class="spacer" style="height: 110px"></div>
+      <div class="spacer" style="height: 110em"></div>
 
       <div class="row">
         <div class="col-sm-6">
@@ -82,7 +80,7 @@ layout: default
             Buy it now!
           </a>
 
-          <div class="spacer" style="height: 140px"></div>
+          <div class="spacer" style="height: 140em"></div>
           <div class="hero-social-links">
             <a class="hero-social-link" href="http://twitter.com/thetingbot">
               <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -94,9 +92,16 @@ layout: default
         </div>
         <div class="col-sm-6">
           <div class="hero-overlay">
-            <div class="hero-overlay-layer"
-                 style="background-color: black">
-              <iframe src='https://gfycat.com/ifr/EqualDrearyDegu' frameborder='0' scrolling='no' width='400' height='400'></iframe>
+            <div class="hero-overlay-layer">
+              <!-- <iframe src='https://gfycat.com/ifr/EqualDrearyDegu' frameborder='0' scrolling='no' width='400' height='400'></iframe> -->
+              <video width="253" height="226" autoplay loop muted playsinline
+                     style="position: absolute;
+                            top: 8.2%;
+                            left: 36.9%;">
+                <source src="https://s3.amazonaws.com/tingbot-static/tingbot-hero.mp4" type="video/mp4" />
+                <!-- <source src="movie.ogg" type="video/ogg" /> -->
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div class="hero-overlay-layer"
                  style="background-image: url(/images/hero-overlay.png);
@@ -166,12 +171,12 @@ layout: default
     margin-bottom: 10px;
   }
   .meet-tingbot-feature .title {
-    font-size: 25px;
+    font-size: 1.25rem;
     margin-bottom: 10px;
   }
   .meet-tingbot-feature .description {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 0.8rem;
   }
 </style>
 <div class="skew left wedge">
@@ -181,7 +186,7 @@ layout: default
     </div>
   </div>
   <div class="skew-content" style="color: white;">
-    <div class="spacer" style="height: 110px"></div>
+    <div class="spacer" style="height: 110em"></div>
     <div class="margins">
       <h1>Meet Tingbot</h1>
       <div class="row">
@@ -194,7 +199,7 @@ layout: default
         </div>
       </div>
 
-      <div class="spacer" style="height: 30px"></div>
+      <div class="spacer" style="height: 30em"></div>
 
       <div style="margin: 0 -15px">
         <div class="row">
@@ -242,12 +247,12 @@ layout: default
           </div>
         </div>
       </div>
-      <div class="spacer" style="height: 74px"></div>
+      <div class="spacer" style="height: 74em"></div>
     </div>
   </div>
 </div>
 
-<div class="spacer" style="height: 14px"></div>
+<div class="spacer" style="height: 14em"></div>
 
 {% comment %}
 
@@ -274,7 +279,7 @@ layout: default
     <div class="skew-background" style="background-color: #d0e3eb"></div>
   </div>
   <div class="skew-content" style="color: white; text-align: right">
-    <div class="spacer" style="height: 74px"></div>
+    <div class="spacer" style="height: 74em"></div>
     <div class="margins">
       <div class="row">
         <div class="col-sm-7">
@@ -335,12 +340,12 @@ layout: default
             </p>
           </div>
 
-          <div class="spacer" style="height: 14px"></div>
+          <div class="spacer" style="height: 14em"></div>
           <a class="btn btn-transparent">
             Buy it now!
           </a>
 
-          <div class="spacer" style="height: 180px"></div>
+          <div class="spacer" style="height: 180em"></div>
         </div>
       </div>
     </div>
@@ -371,24 +376,29 @@ layout: default
   })
 </script>
 
-<div class="spacer" style="height: 84px"></div>
+<div class="spacer" style="height: 84em"></div>
 <style>
   .quote {
     font-weight: 300;
-    font-size: 25px;
+    font-size: 1.25rem;
+  }
+  .quote-image {
+    max-width: 100px;
+    padding: 0 10px;
+    padding-bottom: 15px;
   }
   .quote-credit {
     text-align: right;
-    font-size: 15px;
+    font-size: 0.75rem;
   }
 </style>
 <div class="margins narrow">
   <div class="row">
-    <div class="col-xs-2">
-      <img src="http://placehold.it/95" class="img-circle">
+    <div class="col-sm-2 text-center">
+      <img src="/images/mugs/djacobs.jpg" class="img-circle quote-image">
     </div>
-    <div class="col-xs-10">
-      <div class="quote" style="padding-top: 2%">
+    <div class="col-sm-10">
+      <div class="quote" style="padding-top: 0px; padding-bottom: 10px">
         “It's a wonderful device - it's got my son excited about programming, which
         I love 🙂”
       </div>
@@ -400,7 +410,7 @@ layout: default
 </div>
 
 
-<div class="spacer" style="height: 84px"></div>
+<div class="spacer" style="height: 84em"></div>
 
 {% comment %}
 
@@ -426,12 +436,12 @@ layout: default
     margin-bottom: 10px;
   }
   .tide-feature .title {
-    font-size: 20px;
+    font-size: 1rem;
     margin-bottom: 10px;
   }
   .tide-feature .description {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 0.8rem;
   }
 </style>
 <div class="skew right flat-top">
@@ -441,7 +451,7 @@ layout: default
     </div>
   </div>
   <div class="skew-content" style="color: white">
-    <div class="spacer" style="height: 100px"></div>
+    <div class="spacer" style="height: 100em"></div>
     <div class="margins">
       <div class="row">
         <div class="col-sm-7 col-sm-offset-5">
@@ -450,11 +460,11 @@ layout: default
             The easiest way to make apps for Tingbot is with Tide; our very own code editor.
           </p>
           <p>
-            Tingbot apps are written in Python (one of the best programming languages) and in just a few lines of code, you can make some pretty sweet apps for Tingbot.
+            Tingbot apps are written in Python (one of the best programming languages to learn) and in just a few lines of code, you can make some pretty sweet apps for Tingbot.
           </p>
         </div>
       </div>
-      <div class="spacer" style="height: 200px"></div>
+      <div class="spacer" style="height: 200em"></div>
       <div class="row">
         <div class="col-sm-7 col-sm-offset-5">
           <div class="row">
@@ -481,7 +491,7 @@ layout: default
                 <div class="icon">
                   <img src="/images/tide-step-3.svg" />
                 </div>
-                <div class="title">Develop Tingbot apps on the go with the built-in simulator</div>
+                <div class="title">Develop Tingbot apps on-the-go with the built-in simulator</div>
                 <div class="description"></div>
               </div>
             </div>
@@ -489,11 +499,11 @@ layout: default
         </div>
       </div>
     </div>
-    <div class="spacer" style="height: 80px"></div>
+    <div class="spacer" style="height: 80em"></div>
   </div>
 </div>
 
-<div class="spacer" style="height: 14px"></div>
+<div class="spacer" style="height: 14em"></div>
 
 <div class="skew right flat-bottom">
   <div class="skew-outline">
@@ -502,7 +512,7 @@ layout: default
     </div>
   </div>
   <div class="skew-content" style="color: white">
-    <div class="spacer" style="height: 60px"></div>
+    <div class="spacer" style="height: 60em"></div>
     <div class="margins">
       <div class="row">
         <div class="col-sm-7">
@@ -514,7 +524,7 @@ layout: default
             to code” material before making something real. 
           </p>
           <p>
-            But we’re not dumbing-down - Tingbot teaches users
+            But we’re not dumbing-down &ndash; Tingbot teaches users
             Python: a real industrial programming language that
             could get you a job at Dropbox or build the next Uber.
           </p>
@@ -522,13 +532,13 @@ layout: default
       </div>
     </div>
 
-    <div class="spacer" style="height: 60px"></div>
+    <div class="spacer" style="height: 60em"></div>
 
     </div>
   </div>
 </div>
 
-<div class="spacer" style="height: 14px"></div>
+<div class="spacer" style="height: 14em"></div>
 
 {% comment %}
 
@@ -613,7 +623,7 @@ layout: default
     height: 100%;
     width: 80%;
     display: inline-block;
-    font-size: 15px;
+    font-size: 0.75rem;
     padding: 0 5%;
   }
   .examples-gallery-item:first-child {
@@ -634,13 +644,13 @@ layout: default
     float: left;
   }
   .examples-gallery-item .name {
-    font-size: 12.5px;
+    font-size: 0.625rem;
     line-height: 33px;
     display: inline-block;
     float: left;
   }
   .examples-gallery-item .location {
-    font-size: 12.5px;
+    font-size: 0.625rem;
     line-height: 33px;
     display: inline-block;
     float: right;
@@ -654,7 +664,7 @@ layout: default
     background-position: center;
   }
   .examples-gallery-item .description {
-    font-size: 15px;
+    font-size: 0.75rem;
     font-weight: 400;
   }
 
@@ -692,7 +702,7 @@ layout: default
     </div>
   </div>
   <div class="skew-content">
-    <div class="spacer" style="height: 100px"></div>
+    <div class="spacer" style="height: 50em"></div>
     <div class="margins">
       <div class="row">
         <div class="col-sm-5">
@@ -700,9 +710,10 @@ layout: default
           <p>
             With a Raspberry Pi at it’s core, Tingbot can do pretty much anything you can think of. That said, here’s a few practical things people have made...
           </p>          
-          <div class="spacer" style="height: 50px"></div>
+          <div class="spacer" style="height: 50em"></div>
         </div>
         <div class="col-sm-7">
+          <div class="spacer" style="height: 30em"></div>
           <div class="examples-expander">
             <div class="examples-gallery">
               <div class="examples-gallery-scroller">
@@ -745,10 +756,10 @@ layout: default
       <div class="examples-gallery-dots">
       </div>
 
-      <div class="spacer" style="height: 50px"></div>
+      <div class="spacer" style="height: 50em"></div>
     </div>
 
-    <div class="spacer" style="height: 10px"></div>
+    <div class="spacer" style="height: 10em"></div>
 
     </div>
   </div>
@@ -841,7 +852,7 @@ layout: default
   });
 </script>
 
-<div class="spacer" style="height: 15px"></div>
+<div class="spacer" style="height: 15em"></div>
 
 {% comment %}
 
@@ -870,9 +881,9 @@ layout: default
       <div class="row">
         <div class="col-sm-6"></div>
         <div class="col-sm-6">
-          <div class="spacer" style="height: 100px"></div>
+          <div class="spacer" style="height: 100em"></div>
           <h1>Buy Tingbot now!</h1>
-          <div class="spacer" style="height: 100px"></div>
+          <div class="spacer" style="height: 100em"></div>
         </div>
       </div>
     </div>
@@ -880,7 +891,7 @@ layout: default
   </div>
 </div>
 
-<div class="spacer" style="height: 60px"></div>
+<div class="spacer" style="height: 60em"></div>
 
 {% comment %}
 
@@ -899,11 +910,14 @@ layout: default
   .team-members {
     font-size: 0;
     text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
   }
   .team-member {
-    font-size: 15px;
+    font-size: 0.75rem;
     display: inline-block;
     text-align: center;
+    margin-bottom: 20px;
   }
   .team-member .photo {
     background-color: #b4b6b8;
@@ -918,20 +932,22 @@ layout: default
   
   .core.team-member {
     width: 20%;
-    min-width: 150px;
+    min-width: 140px;
   }
   .core.team-member .photo {
-    height: 100px;
-    width: 100px;
+    height: 5rem;
+    width: 5rem;
   }
   
   .community.team-member {
     width: 11.11111%;
-    min-width: 100px;
+    min-width: 90px;
+    vertical-align: top;
+    font-size: 0.65rem;
   }
   .community.team-member .photo {
-    height: 56px;
-    width: 56px;
+    height: 2.8rem;
+    width: 2.8rem;
   }
 </style>
 <h1 style="text-align: center">The Team</h1>
@@ -948,93 +964,93 @@ layout: default
   </p>
 </div>
 
-<div class="spacer" style="height: 60px"></div>
+<div class="spacer" style="height: 60em"></div>
 
 <div class="margins">
   <h3 style="text-align:center">Core team</h3>
 
   <div class="team-members">
     <div class="core team-member">
-      <div class="photo"></div>
+      <div class="photo" style="background-image: url(/images/mugs/ben.jpg)"></div>
       <div class="name">Ben Pawle</div>
       <div class="position">Designer</div>
     </div>
     <div class="core team-member">
-      <div class="photo"></div>
+      <div class="photo" style="background-image: url(/images/mugs/joe.jpg)"></div>
       <div class="name">Joe Rickerby</div>
       <div class="position">Software</div>
     </div>
     <div class="core team-member">
-      <div class="photo"></div>
+      <div class="photo" style="background-image: url(/images/mugs/ken.jpg)"></div>
       <div class="name">Ken Smeed</div>
       <div class="position">Designer</div>
     </div>
     <div class="core team-member">
-      <div class="photo"></div>
+      <div class="photo" style="background-image: url(/images/mugs/dunc.jpg)"></div>
       <div class="name">Duncan Smeed</div>
       <div class="position">Hardware</div>
     </div>
     <div class="core team-member">
-      <div class="photo"></div>
+      <div class="photo" style="background-image: url(/images/mugs/phil.jpg)"></div>
       <div class="name">Phil Gilbanks</div>
       <div class="position">Technical</div>
     </div>
   </div>
   
-  <div class="spacer" style="height: 40px"></div>
+  <div class="spacer" style="height: 40em"></div>
 
   <h3 style="text-align:center">Community team</h3>
 
   <div class="team-members">
     <div class="community team-member">
-      <div class="photo"></div>
-      <div class="name">Member</div>
-      <div class="position">Position</div>
+      <div class="photo" style="background-image: url(/images/mugs/iandera.jpg"></div>
+      <div class="name">Ian Dera</div>
+      <div class="position">DFM Expert</div>
     </div>
     <div class="community team-member">
-      <div class="photo"></div>
-      <div class="name">Member</div>
-      <div class="position">Position</div>
+      <div class="photo" style="background-image: url(/images/mugs/furbrain.jpg"></div>
+      <div class="name">Phil Underwood</div>
+      <div class="position">Open source developer</div>
     </div>
     <div class="community team-member">
-      <div class="photo"></div>
-      <div class="name">Member</div>
-      <div class="position">Position</div>
+      <div class="photo" style="background-image: url(/images/mugs/rob4001.jpg"></div>
+      <div class="name">Robert Wilson</div>
+      <div class="position">Open source developer</div>
     </div>
     <div class="community team-member">
-      <div class="photo"></div>
-      <div class="name">Member</div>
-      <div class="position">Position</div>
+      <div class="photo" style="background-image: url(/images/mugs/whistlemaster.jpg"></div>
+      <div class="name">Whistlemaster</div>
+      <div class="position">One-man tingapp wolf pack</div>
     </div>
     <div class="community team-member">
-      <div class="photo"></div>
-      <div class="name">Member</div>
-      <div class="position">Position</div>
+      <div class="photo" style="background-image: url(/images/mugs/greenock.jpg"></div>
+      <div class="name">Ben Greencock</div>
+      <div class="position">Design contributor</div>
     </div>
     <div class="community team-member">
-      <div class="photo"></div>
-      <div class="name">Member</div>
-      <div class="position">Position</div>
+      <div class="photo" style="background-image: url(/images/mugs/ash.jpg"></div>
+      <div class="name">Ashley Johnston</div>
+      <div class="position">Design contributor</div>
     </div>
     <div class="community team-member">
-      <div class="photo"></div>
-      <div class="name">Member</div>
-      <div class="position">Position</div>
+      <div class="photo" style="background-image: url(/images/mugs/kav.jpg"></div>
+      <div class="name">Kavism</div>
+      <div class="position">Design contributor</div>
     </div>
     <div class="community team-member">
-      <div class="photo"></div>
-      <div class="name">Member</div>
-      <div class="position">Position</div>
+      <div class="photo" style="background-image: url(/images/mugs/gadgetoid.jpg"></div>
+      <div class="name">Gadgetoid</div>
+      <div class="position">Tester</div>
     </div>
     <div class="community team-member">
-      <div class="photo"></div>
-      <div class="name">Member</div>
-      <div class="position">Position</div>
+      <div class="photo" style="background-image: url(/images/mugs/zoe.jpg"></div>
+      <div class="name">Zoe Prosser</div>
+      <div class="position">Tester</div>
     </div>
   </div>
 </div>
 
-<div class="spacer" style="height: 40px"></div>
+<div class="spacer" style="height: 40em"></div>
 
 <h3 style="text-align:center">Thanks to all our Kickstarter backers!</h3>
 <img src="images/backersgrid.jpg">
