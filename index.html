@@ -516,30 +516,98 @@ layout: default
     font-weight: 300;
     font-size: 0.8rem;
   }
+  .tide-tingbot {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    width: 350px;
+  }
+  .tide-tingbot:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  .tide-tingbot-layer {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-size: 100%;
+  }
+  .btn-tide-download {
+    border-radius: 5px;
+    color: #666;
+    border: none;
+    padding: 10px 12px;
+  }
+  .tide-faint {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.7);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .tide-faint a {
+    color: inherit;
+    font-weight: bold;
+  }
 </style>
 <div class="skew right flat-top">
   <div class="skew-outline">
     <div class="skew-background"
-         style="background-color: #37a4da">
+         style="background-color: #02a7e6;
+                background-image: url(/images/tide-bg.jpg);
+                background-position: center -100px;
+                background-repeat: no-repeat;
+                background-size: 2600px auto">
     </div>
   </div>
-  <div class="skew-content" style="color: white">
+  <div class="skew-content" style="color: white;">
     <div class="spacer" style="height: 100em"></div>
     <div class="margins">
       <div class="row">
         <div class="col-sm-7 col-sm-offset-5">
-          <h1>Tide</h1>
-          <p>
-            The easiest way to make apps for Tingbot is with Tide; our very own code editor.
-          </p>
-          <p>
-            Tingbot apps are written in Python (one of the best programming languages to learn) and in just a few lines of code, you can make some pretty sweet apps for Tingbot.
-          </p>
+          <div style="min-height: 300px;">
+            <h1>Tide</h1>
+            <p>
+              The easiest way to make apps for Tingbot is with Tide; our very own code editor.
+            </p>
+            <p>
+              Tingbot apps are written in Python (one of the easiest programming languages to learn) and in just a few lines of code, you can make some pretty sweet apps for Tingbot.
+            </p>
+          </div>
+          <div class="text-right">
+            <div class="expand-image-wrapper">
+              <div class="expand-image">
+                <div class="tide-tingbot">
+                  <div class="tide-tingbot-layer" style="background-image: url(/images/tide-tingbot.png);">
+                  </div>
+                  <div class="tide-tingbot-layer" style="background-image: url(/images/tide-tingbot-screen.gif);">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="spacer" style="height: 200em"></div>
+      <div class="spacer" style="height: 40em"></div>
       <div class="row">
-        <div class="col-sm-7 col-sm-offset-5">
+        <div class="col-sm-4">
+          <h2>Get Tide for Mac</h2>
+          <p>
+            Download the Tide desktop app to write your own apps for Tingbot.
+          </p>
+          <a class="btn btn-default btn-block btn-tide-download">
+            <i class="fa fa-apple" aria-hidden="true"></i>
+            &nbsp;
+            <b>Download</b> (80MB)
+          </a>
+          <p class="tide-faint">
+            Version 1.0.3
+          </p>
+          <p class="tide-faint">
+            Looking for the <a href="http://docs.tingbot.com/tide/">Windows</a> or
+            <a href="http://docs.tingbot.com/tide/">Linux</a> version?
+          </p>
+        </div>
+        <div class="col-sm-7 col-sm-push-1">
           <div class="row">
             <div class="col-xs-4">
               <div class="tide-feature">
@@ -931,45 +999,6 @@ layout: default
 
 {% comment %}
 
-       /$$$$$$$                                                             
-      | $$__  $$                                                            
-      | $$  \ $$ /$$   /$$ /$$   /$$       /$$$$$$$   /$$$$$$  /$$  /$$  /$$
-      | $$$$$$$ | $$  | $$| $$  | $$      | $$__  $$ /$$__  $$| $$ | $$ | $$
-      | $$__  $$| $$  | $$| $$  | $$      | $$  \ $$| $$  \ $$| $$ | $$ | $$
-      | $$  \ $$| $$  | $$| $$  | $$      | $$  | $$| $$  | $$| $$ | $$ | $$
-      | $$$$$$$/|  $$$$$$/|  $$$$$$$      | $$  | $$|  $$$$$$/|  $$$$$/$$$$/
-      |_______/  \______/  \____  $$      |__/  |__/ \______/  \_____/\___/ 
-                           /$$  | $$                                        
-                          |  $$$$$$/                                        
-                           \______/                                         
-
-{% endcomment %}
-
-<div class="skew left">
-  <div class="skew-outline">
-    <div class="skew-background"
-         style="background-image: url(/images/hand-on-purple.jpg)">
-    </div>
-  </div>
-  <div class="skew-content" style="color: white">
-    <div class="margins">
-      <div class="row">
-        <div class="col-sm-6"></div>
-        <div class="col-sm-6">
-          <div class="spacer" style="height: 100em"></div>
-          <h1>Buy Tingbot now!</h1>
-          <div class="spacer" style="height: 100em"></div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</div>
-
-<div class="spacer" style="height: 60em"></div>
-
-{% comment %}
-
        /$$$$$$$$                                  
       |__  $$__/                                  
          | $$     /$$$$$$   /$$$$$$  /$$$$$$/$$$$ 
@@ -1128,6 +1157,52 @@ layout: default
 <div class="spacer" style="height: 40em"></div>
 
 <h3 style="text-align:center">Thanks to all our Kickstarter backers!</h3>
+
 <img src="images/backersgrid.jpg">
+
+<div class="spacer" style="height: 13em"></div>
+
+{% comment %}
+
+       /$$$$$$$                                                             
+      | $$__  $$                                                            
+      | $$  \ $$ /$$   /$$ /$$   /$$       /$$$$$$$   /$$$$$$  /$$  /$$  /$$
+      | $$$$$$$ | $$  | $$| $$  | $$      | $$__  $$ /$$__  $$| $$ | $$ | $$
+      | $$__  $$| $$  | $$| $$  | $$      | $$  \ $$| $$  \ $$| $$ | $$ | $$
+      | $$  \ $$| $$  | $$| $$  | $$      | $$  | $$| $$  | $$| $$ | $$ | $$
+      | $$$$$$$/|  $$$$$$/|  $$$$$$$      | $$  | $$|  $$$$$$/|  $$$$$/$$$$/
+      |_______/  \______/  \____  $$      |__/  |__/ \______/  \_____/\___/ 
+                           /$$  | $$                                        
+                          |  $$$$$$/                                        
+                           \______/                                         
+
+{% endcomment %}
+
+<div class="skew right flat-top">
+  <div class="skew-outline">
+    <div class="skew-background"
+         style="background-image: url(/images/hand-on-purple.jpg)">
+    </div>
+  </div>
+  <div class="skew-content" style="color: white">
+    <div class="margins">
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-8 text-center">
+          <div class="spacer" style="height: 100em"></div>
+          <h2>What are you waiting for?</h2>
+          <div class="spacer" style="height: 20em"></div>
+          <a href="http://store.tingbot.com" class="btn btn-transparent btn-lg">
+            Buy Tingbot now!
+          </a>
+          <div class="spacer" style="height: 100em"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="spacer" style="height: 20em"></div>
 
 {% include footer.html %}
