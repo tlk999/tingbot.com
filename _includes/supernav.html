@@ -1,6 +1,19 @@
 <div class="supernav">
-  <div class="supernav-item">
-    <a href="http://tingbot.com">TB</a>
+  <div class="supernav-logo">
+    <a href="http://tingbot.com">
+      <svg style="vertical-align:2px;" xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 26 26">
+        <g>
+          <path d="M26,26H0V0h26V26z M2,24h22V2H2V24z"/>
+          <polygon points="10.874,17.014 21,14 19,17 9,20  "/>
+          <polygon points="21,14 10.875,17.042 8,9 18,6  "/>
+          <polygon points="8,9 5.573,10.662 5.316,11.752 7.345,17.461 10.874,17.014  "/>
+          <polygon points="6.863,14.295 5,17 5.346,17.582 9,20 10.874,17.014   "/>
+
+          <polygon fill="#FFFFFF" points="10,10 17,8 19,14 12,16  "/>
+          <line fill="none" stroke="#FFFFFF" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="9" y1="15" x2="8" y2="13"/>
+        </g>
+      </svg>
+    </a>
   </div>
   <div class="supernav-item">
     <a href="http://ocean.tingbot.com">Apps</a>
@@ -32,7 +45,7 @@
 </div>
 <style>
   .supernav {
-    padding: 14px 10px;
+    padding: 4px 10px;
     font-size: 13px;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
@@ -40,17 +53,22 @@
     position: relative;
     min-height: 42px;
   }
+  .supernav-logo {
+    float: left;
+    padding: 5px 20px;
+    padding-bottom: 0px;
+  }
   .supernav-item {
     float: left;
-    padding: 0 20px;
+    padding: 10px 20px;
   }
   .supernav-item-right {
     float: right;
   }
-  .supernav-item a {
+  .supernav-logo a, .supernav-item a {
     color: inherit;
   }
-  .supernav-item svg {
+  .supernav-logo svg, .supernav-item svg {
     fill: currentColor;
     vertical-align: -1px;
   }

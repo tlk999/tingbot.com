@@ -700,109 +700,34 @@ layout: default
 {% endcomment %}
 
 <style>
-  .examples-expander {
-    overflow: visible;
-  }
-  .examples-gallery {
-    overflow: hidden;
-    position: relative;
-    /*height: 600px;*/
-    padding-top: 95%;
-  }
-
-  @media(max-width:767px) {
-    .examples-gallery {
-      padding-top: 120%;
-    }
-  }
-  .examples-gallery:before, .examples-gallery:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 10%;
-    z-index: 1;
-  }/*
-  .examples-gallery:before {
-    left: 0;
-    background-image: linear-gradient(
-      to right,
-      rgba(245, 248, 251, 0.8),
-      rgba(245, 248, 251, 0.3),
-      rgba(245, 248, 251, 0.1),
-      rgba(245, 248, 251, 0.05),
-      rgba(245, 248, 251, 0.0)
-    );
-  }
-  .examples-gallery:after {
-    right: 0;
-    background-image: linear-gradient(
-      to left,
-      rgba(245, 248, 251, 0.8),
-      rgba(245, 248, 251, 0.3),
-      rgba(245, 248, 251, 0.1),
-      rgba(245, 248, 251, 0.05),
-      rgba(245, 248, 251, 0.0)
-    );
-  }*/
-  .examples-gallery-scroller {
-    overflow-x: scroll;
-    overflow-y: visible;
-    position: absolute;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: -20px;
-    padding-bottom: 20px;
-    white-space: nowrap;
-    font-size: 0;
-  }
-  .examples-gallery-scroller * {
-    white-space: normal;
-  }
   .examples-gallery-item {
-    height: 100%;
-    width: 80%;
-    display: inline-block;
-    font-size: 0.75rem;
-    padding: 0 5%;
-  }
-  .examples-gallery-item:first-child {
-    margin-left: 10%;
-  }
-  .examples-gallery-item:last-child {
-    margin-right: 10%;
+    margin-bottom: 50px;
   }
   .examples-gallery-item .user-photo {
     display: inline-block;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    width: 33px;
-    height: 33px;
+    width: 28px;
+    height: 28px;
     margin-bottom: 10px;
     margin-right: 10px;
     float: left;
   }
   .examples-gallery-item .name {
     font-size: 0.625rem;
-    line-height: 33px;
-    display: inline-block;
-    float: left;
+    /*font-weight: 600;*/
+    display: block;
   }
   .examples-gallery-item .location {
     font-size: 0.625rem;
-    line-height: 33px;
-    display: inline-block;
-    float: right;
+    display: block;
+    color: #706f6f;
   }
   .examples-gallery-item .photo {
     clear: both;
     margin-top: 10px;
     margin-bottom: 14px;
-    padding-top: 100%;
     background-size: cover;
     background-position: center;
   }
@@ -817,24 +742,6 @@ layout: default
     }
   }
 
-  .examples-gallery-dot {
-    width: 14px;
-    height: 14px;
-    border: 2px solid white;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 15px;
-    cursor: pointer;
-    transition: 0.1s all;
-  }
-  .examples-gallery-dot:hover {
-    transform: scale(1.3);
-  }
-  .examples-gallery-dot.selected {
-    transform: scale(1.3);
-    background-color: #ffbeaf;
-    background-image: linear-gradient(to right, rgba(255,220,174,1) 0%, rgba(255,164,177,1) 100%);
-  }
 </style>
 <div class="skew left flat-top">
   <div class="skew-outline">
@@ -847,56 +754,140 @@ layout: default
   <div class="skew-content">
     <div class="spacer" style="height: 50em"></div>
     <div class="margins">
-      <div class="row">
-        <div class="col-sm-5">
-          <h1>What can Tingbot do?</h1>
-          <p>
-            With a Raspberry Pi at it’s core, Tingbot can do pretty much anything you can think of. That said, here’s a few practical things people have made...
-          </p>          
-          <div class="spacer" style="height: 50em"></div>
-        </div>
-        <div class="col-sm-7">
-          <div class="spacer" style="height: 30em"></div>
-          <div class="examples-expander">
-            <div class="examples-gallery">
-              <div class="examples-gallery-scroller">
-
-                <div class="examples-gallery-item">
-                  <div class="user-photo"
-                       style="background-image: url(http://placehold.it/30x40)"></div>
-                  <div class="name">Kavity kav</div>
-                  <div class="location">London, UK</div>
-                  <div class="photo"
-                       style="background-image: url(/images/example1.png)"></div>
-                  <div class="description">Tingbot BBC Radio player over wifi</div>
-                </div>
-                
-                <div class="examples-gallery-item">
-                  <div class="user-photo"
-                       style="background-image: url(http://placehold.it/30x40)"></div>
-                  <div class="name">Kavity kav</div>
-                  <div class="location">London, UK</div>
-                  <div class="photo"
-                       style="background-image: url(/images/example1.png)"></div>
-                  <div class="description">Tingbot BBC Radio player over wifi</div>
-                </div>
-                
-                <div class="examples-gallery-item">
-                  <div class="user-photo"
-                       style="background-image: url(http://placehold.it/30x40)"></div>
-                  <div class="name">Kavity kav</div>
-                  <div class="location">London, UK</div>
-                  <div class="photo"
-                       style="background-image: url(/images/example1.png)"></div>
-                  <div class="description">Tingbot BBC Radio player over wifi</div>
-                </div>
-              </div>
+      <h1>What can Tingbot do?</h1>
+      <p>
+        With a Raspberry Pi at it’s core, Tingbot can do pretty much anything you can think of. That said, here’s a few practical things people have made...
+      </p>          
+      <div class="spacer" style="height: 50em"></div>
+      <div class="examples-gallery">
+        <div class="row">
+          <div class="examples-gallery-item col-xs-6 col-sm-4">
+            <div class="user-photo"
+                 style="background-image: url(/images/examples-mugs/benpawle.jpg);">
+            </div>
+            <div class="name">@benpawle</div>
+            <div class="location">Cumbria, UK</div>
+            <div class="photo">
+              <div class='gfyitem' data-id='CreativeGorgeousGarpike'></div>
+            </div>
+            <div class="description">
+              I built a messenger app so I can send SMS messages to my grannies Tingbot in seconds (via <a href="https://ifttt.com/" target="_blank">IFTTT</a>)
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="examples-gallery-dots">
+          <div class="examples-gallery-item col-xs-6 col-sm-4">
+            <div class="user-photo"
+                 style="background-image: url(/images/examples-mugs/nhumfrey.jpg);">
+            </div>
+            <div class="name">@njh</div>
+            <div class="location">London, UK</div>
+            <div class="photo">
+              <img src="/images/example1.png">
+            </div>
+            <div class="description">
+              I connected a USB speaker to my @thetingbot and turned it into a <a href="https://twitter.com/njh/status/781595430786400256?lang=en" target="_blank">Wifi Radio</a>
+            </div>
+          </div>
+
+          <div class="examples-gallery-item col-xs-6 col-sm-4">
+            <div class="user-photo"
+                 style="background-image: url(/images/examples-mugs/xtramural.png);">
+            </div>
+            <div class="name">@xtramural</div>
+            <div class="location">Dunbar, Scotland</div>
+            <div class="photo">
+              <div class='gfyitem' data-id='PerkyLoneBarnacle'></div>
+            </div>
+            <div class="description">
+              Play retro console games on Tingbot thanks to the great <a href="http://forum.tingbot.com/topic/4/tingbot-with-emulationstation-and-retropie" target="_blank">RetroPie and EmulationStation</a>.
+            </div>
+          </div>
+
+          <div class="examples-gallery-item col-xs-6 col-sm-4">
+            <div class="user-photo"
+                 style="background-image: url(/images/examples-mugs/joerick.png);">
+            </div>
+            <div class="name">@joerick</div>
+            <div class="location">London, UK</div>
+            <div class="photo">
+              <div class='gfyitem' data-id='WelllitVariableIguana'></div>
+            </div>
+            <div class="description">
+              <a href="https://github.com/tingbot-apps/bus-tracker" target="_blank">Bustle</a> uses TFL transport data to show me when my next buses are coming
+            </div>
+          </div>
+
+          <div class="examples-gallery-item col-xs-6 col-sm-4">
+            <div class="user-photo"
+                 style="background-image: url(/images/examples-mugs/whistlemaster.jpg);">
+            </div>
+            <div class="name">@whistlemaster</div>
+            <div class="location">Switzerland</div>
+            <div class="photo">
+              <div class='gfyitem' data-id='AgitatedHollowBlackrhino'></div>
+            </div>
+            <div class="description">
+              A Tingbot take on Conway’s 70’s classic <a href="http://conwaylife.com/" target="_blank">Game of Life</a>
+            </div>
+          </div>
+
+          <div class="examples-gallery-item col-xs-6 col-sm-4">
+            <div class="user-photo"
+                 style="background-image: url(/images/examples-mugs/tingbotteam.png);">
+            </div>
+            <div class="name">@thetingbot</div>
+            <div class="location">UK</div>
+            <div class="photo">
+              <div class='gfyitem' data-id='GrandGrayAffenpinscher'></div>
+            </div>
+            <div class="description">
+              <a href="http://ting.it/" target="_blank">Ting.it</a> lets you make personal, playful animated expressions and share them with others
+            </div>
+          </div>
+
+          <div class="examples-gallery-item col-xs-6 col-sm-4">
+            <div class="user-photo"
+                 style="background-image: url(/images/examples-mugs/furbrain.jpg);">
+            </div>
+            <div class="name">@furbrain</div>
+            <div class="location">UK</div>
+            <div class="photo">
+              <div class='gfyitem' data-id='EnragedIckyDipper'></div>
+            </div>
+            <div class="description">
+              A <a href="https://twitter.com/LMcUnderwood/status/811308312394432512" target="_blank">robot arm controller</a> for tingbot, designed for use with the OWI Robot Arm (available from Maplin UK)
+            </div>
+          </div>
+
+          <div class="examples-gallery-item col-xs-6 col-sm-4">
+            <div class="user-photo"
+                 style="background-image: url(/images/examples-mugs/gadgetoid.jpg);">
+            </div>
+            <div class="name">@gadgetoid</div>
+            <div class="location">Sheffield, UK</div>
+            <div class="photo">
+              <div class='gfyitem' data-id='HardtofindFondBelugawhale'></div>
+            </div>
+            <div class="description">
+              Had interesting times playing with @thetingbot and <a href="https://shop.pimoroni.com/collections/flotilla" target="_blank">Flotilla</a>, definitely going to be a cool combination!
+            </div>
+          </div>
+
+          <div class="examples-gallery-item col-xs-6 col-sm-4">
+            <div class="user-photo"
+                 style="background-image: url(/images/examples-mugs/omgmog.jpg);">
+            </div>
+            <div class="name">@omgmog</div>
+            <div class="location">London, UK</div>
+            <div class="photo">
+              <div class='gfyitem' data-id='PinkSardonicEider'></div>
+            </div>
+            <div class="description">
+              Show random <a href="https://giphy.com/" target="_blank">Giphy</a> gifs tagged with "adventure time" on your Tingbot
+            </div>
+          </div>
+
+        </div>
       </div>
 
       <div class="spacer" style="height: 50em"></div>
@@ -909,91 +900,10 @@ layout: default
 </div>
 <script>
   window.addEventListener('load', function () {
-    var lastScrollTime = timestamp();
-
-    function animateScrollToItem (item, animationDuration) {
-      animationDuration = animationDuration || 400;
-      var offset = item.offsetLeft;
-      var width = item.offsetWidth;
-      $('.examples-gallery-scroller').animate({
-        scrollLeft: offset - width*0.1/0.8,
-      }, animationDuration)
-    }
-
-    function getMiddleItem () {
-      var scroller = $('.examples-gallery-scroller')[0];
-      var items = $('.examples-gallery-item', scroller);
-
-      var middleItem = null;
-      var middleItemDistance = Infinity;
-
-      items.each(function () {
-        var distance = Math.abs(this.offsetLeft + this.offsetWidth/2
-                                - (scroller.scrollLeft + scroller.offsetWidth/2));
-        if (distance < middleItemDistance) {
-          middleItem = this;
-          middleItemDistance = distance;
-        }
-      });
-
-      return middleItem;
-    }
-
-    function updateScrollerDots () {
-      var middleItem = getMiddleItem();
-      var dot = $('#' + middleItem.dataset.dotId);
-      $('.examples-gallery-dot').removeClass('selected');
-      dot.addClass('selected');
-    }
-
-    function timestamp () {
-      // current time in seconds
-      return new Date().getTime() / 1000;
-    }
-
-    function autoScrollToNext() {
-      var time = timestamp();
-
-      if (time > lastScrollTime + 5.0) {
-        var currentItem = getMiddleItem();
-        var nextItem = $(currentItem).next();
-        if (nextItem.length == 0) {
-          // go back to first
-          nextItem = $('.examples-gallery-item:first-child');
-        }
-        animateScrollToItem(nextItem[0]);
-      }
-    }
-    setInterval(autoScrollToNext, 500);
-
-    $('.examples-gallery-item').each(function (index) {
-      var item = this;
-      var dot = $('<div class="examples-gallery-dot"></div>');
-      var dotId = 'examples-gallery-dot-' + index;
-      dot.attr('id', dotId);
-      dot.appendTo('.examples-gallery-dots');
-      item.dataset.dotId = dotId;
-      item.dataset.index = index;
-
-      dot.click(function () {
-        animateScrollToItem(item, 250);
-      });
-    });
-
-    $('.examples-gallery-scroller').bind('scroll mousedown wheel DOMMouseScroll mousewheel keyup', function(e) {
-      if (e.which > 0 || e.type == "mousedown" || e.type == "mousewheel") {
-        // manual scroll
-        $('.examples-gallery-scroller').stop();
-      }
-
-      lastScrollTime = timestamp();
-      updateScrollerDots();
-    });
-
-    $('window').on('resize', updateScrollerDots);
-    updateScrollerDots();
+    $('.examples-gallery-item').matchHeight({property: 'min-height'});
   });
 </script>
+
 
 <div class="spacer" style="height: 15em"></div>
 
@@ -1041,6 +951,7 @@ layout: default
   .core.team-member .photo {
     height: 5rem;
     width: 5rem;
+    border-radius: 50%;
   }
   
   .community.team-member {
@@ -1052,6 +963,7 @@ layout: default
   .community.team-member .photo {
     height: 2.8rem;
     width: 2.8rem;
+    border-radius: 50%;
   }
 </style>
 <h1 style="text-align: center">The Team</h1>
