@@ -21,6 +21,13 @@
 
     </a>
   </div>
+  <div class="supernav-hamburger" onclick="toggleSupernavOpen()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="12px" viewBox="0 0 18 12">
+      <rect width="18" height="2"/>
+      <rect y="5" width="18" height="2"/>
+      <rect y="10" width="18" height="2"/>
+    </svg>
+  </div>
   <div style="clear:both"></div>
 </div>
 <style>
@@ -30,6 +37,8 @@
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
+    position: relative;
+    min-height: 42px;
   }
   .supernav-item {
     float: left;
@@ -45,4 +54,32 @@
     fill: currentColor;
     vertical-align: -1px;
   }
+  .supernav-hamburger {
+    display: none;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+  }
+  .supernav-hamburger svg {
+    fill: currentColor;
+  }
+  @media (max-width: 767px) {
+    .supernav-hamburger {
+      display: inline-block;
+    }
+    .supernav-item {
+      display: none;
+    }
+    .supernav.menuopen .supernav-item {
+      display: block;
+      float: none;
+    }
+  }
+
 </style>
+<script>
+  function toggleSupernavOpen() {
+    var supernav = document.querySelector('.supernav');
+    supernav.classList.toggle('menuopen');
+  }
+</script>
