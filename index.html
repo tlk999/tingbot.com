@@ -179,6 +179,16 @@ layout: default
 </div>
 
 <style>
+  .meet-tingbot-background {
+    background-image: url(/images/tingbotmacbed.jpg);
+  }
+  @media(max-width:767px) {
+    .meet-tingbot-background {
+      background-image: url(/images/tingbotmacbed-mobile.jpg);
+      background-size: cover;
+      background-position: center -20px;
+    }
+  }
   .meet-tingbot-feature {
     text-align: center;
     padding: 0 0.5rem;
@@ -196,17 +206,30 @@ layout: default
     font-weight: 600;
     font-size: 0.8rem;
   }
+  @media(max-width:767px) {
+    .meet-tingbot-feature {
+      text-align: left;
+    }
+    .meet-tingbot-feature .icon {
+      width: 25%;
+      float: left;
+    }
+    .meet-tingbot-feature .title {
+      margin-bottom: 0.2rem;
+    }
+  }
+
 </style>
 <div class="skew left wedge">
   <div class="skew-outline">
-    <div class="skew-background"
-         style="background-image: url(/images/tingbotmacbed.jpg);">
+    <div class="skew-background meet-tingbot-background">
     </div>
   </div>
   <div class="skew-content" style="color: white;">
     <div class="spacer" style="height: 80em"></div>
     <div class="margins">
       <h1>Meet Tingbot</h1>
+      <div class="spacer visible-xs-block" style="height: 100vw"></div>
       <div class="row">
         <div class="col-sm-5">
           <p>
@@ -223,8 +246,8 @@ layout: default
         <div class="row">
           <div class="col-sm-7">
             <div class="row">
-              <div class="col-xs-4">
-                <div class="meet-tingbot-feature">
+              <div class="col-sm-4">
+                <div class="meet-tingbot-feature clearfix">
                   <div class="icon">
                     <img src="/images/tingbot-step-1.svg" />
                   </div>
@@ -235,8 +258,8 @@ layout: default
                   </div>
                 </div>
               </div>
-              <div class="col-xs-4">
-                <div class="meet-tingbot-feature">
+              <div class="col-sm-4">
+                <div class="meet-tingbot-feature clearfix">
                   <div class="icon">
                     <img src="/images/tingbot-step-2.svg" />
                   </div>
@@ -248,8 +271,8 @@ layout: default
                   </div>
                 </div>
               </div>
-              <div class="col-xs-4">
-                <div class="meet-tingbot-feature">
+              <div class="col-sm-4">
+                <div class="meet-tingbot-feature clearfix">
                   <div class="icon">
                     <img src="/images/tingbot-step-3.svg" />
                     </div>
@@ -646,12 +669,23 @@ layout: default
 
 <div class="spacer" style="height: 14em"></div>
 
+<style>
+  .build-apps-background {
+    background-image: url(/images/alice-bg.jpg);
+    background-size: 100% auto;
+  }
+  @media(max-width:767px) {
+    .build-apps-background {
+      background-image: url(/images/alice-bgmobile.jpg);
+      background-size: cover;
+      background-position: bottom;
+    }
+  }
+</style>
 <div class="skew right flat-bottom">
   <div class="skew-outline">
-    <div class="skew-background"
-         style="background-color: #231f20;
-                background-image: url(/images/alice-bg.jpg);
-                background-size: 100% auto;">
+    <div class="skew-background build-apps-background"
+         style="background-color: #231f20;">
     </div>
   </div>
   <div class="skew-content" style="color: white">
@@ -672,6 +706,7 @@ layout: default
             could get you a job at Dropbox or build the next Uber.
           </p>
         </div>
+        <div class="spacer visible-xs-block" style="height: 60vw"></div>
       </div>
     </div>
 
