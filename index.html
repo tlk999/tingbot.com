@@ -57,13 +57,6 @@ layout: default
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
   }
-  .hero-button {
-    transition: 0.15s all;
-  }
-  .hero-button:hover {
-    background-color: white;
-    color: #ef852a;
-  }
 </style>
 <div class="skew right flat-top">
   <div class="skew-outline">
@@ -113,17 +106,23 @@ layout: default
           <p>
             Make cool apps and learn to code with Tingbot: the creative app platform for the Raspberry Pi.
           </p>
-          <a class="btn btn-transparent hero-button">
-            Buy it now!
+          
+          <div class="spacer" style="height: 20em"></div>
+
+          <a class="btn shop-button" style="color: #ef852a" href="http://store.tingbot.com">
+            Shop now
           </a>
 
-          <div class="spacer" style="height: 140em"></div>
+          <div class="spacer" style="height: 120em"></div>
           <div class="hero-social-links">
-            <a class="hero-social-link" href="http://twitter.com/thetingbot">
+            <a class="hero-social-link" href="http://twitter.com/thetingbot" target="_blank">
               <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
-            <a class="hero-social-link" href="http://facebook.com/thetingbot">
+            <a class="hero-social-link" href="http://facebook.com/thetingbot" target="_blank">
               <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
+            <a class="hero-social-link" href="https://github.com/tingbot" target="_blank">
+              <i class="fa fa-github" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -154,27 +153,35 @@ layout: default
     </div>
   </div>
   <div class="skew-content" style="text-align: center;">
+    <div class="spacer" style="height: 20em"></div>
     <img src="/images/press.png"
          usemap="#press-logo-map"
          width="853" />
     <map name="press-logo-map" id="press-logo-map">
-      <area href="http://arstechnica.co.uk/gadgets/2016/04/maker-faire-uk-2016-review/"
-            shape="rect" coords="40,53,327,171" />
-      <area href="https://www.producthunt.com/tech/tingbot"
-            shape="rect" coords="427,26,606,191" />
-      <area href="https://www.raspberrypi.org/magpi/issues/40/"
-            shape="rect" coords="709,44,975,180" />
-      <area href="http://www.theregister.co.uk/2015/11/12/raspberry_pi_tingbot/"
-            shape="rect" coords="29,250,382,359" />
-      <area href="https://www.kickstarter.com/projects/744235676/tingbot-raspberry-pi-made-fun/"
-            shape="rect" coords="490,231,713,377" />
-      <area href="https://techcrunch.com/2015/11/27/tingbot/"
-            shape="rect" coords="781,234,1004,380" />
+      <area href="http://arstechnica.co.uk/gadgets/2016/04/maker-faire-uk-2016-review/" 
+            shape="rect"
+            coords="16,210,366,369" />
+      <area href="http://www.theregister.co.uk/2015/11/12/raspberry_pi_tingbot/" 
+            shape="rect"
+            coords="6,21,385,180" />
+      <area href="https://techcrunch.com/2015/11/27/tingbot/" 
+            shape="rect"
+            coords="392,26,682,185" />
+      <area href="https://www.producthunt.com/tech/tingbot" 
+            shape="rect"
+            coords="411,213,653,360" />
+      <area href="https://www.kickstarter.com/projects/744235676/tingbot-raspberry-pi-made-fun/" 
+            shape="rect"
+            coords="714,30,956,177" />
+      <area href="https://www.raspberrypi.org/magpi/issues/40/" 
+            shape="rect"
+            coords="721,212,977,359" />
       <!--
       <area href="bbc.co.uk"
             shape="rect" coords="1258,272,1517,379" />
       -->
     </map>
+    <div class="spacer" style="height: 20em"></div>
   </div>
 </div>
 
@@ -201,6 +208,7 @@ layout: default
   .meet-tingbot-feature .title {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
+    font-weight: 600;
   }
   .meet-tingbot-feature .description {
     font-weight: 600;
@@ -230,6 +238,7 @@ layout: default
     <div class="margins">
       <h1>Meet Tingbot</h1>
       <div class="spacer visible-xs-block" style="height: 100vw"></div>
+      <div class="spacer hidden-xs" style="40em"></div>
       <div class="row">
         <div class="col-sm-5">
           <p>
@@ -240,7 +249,7 @@ layout: default
         </div>
       </div>
 
-      <div class="spacer" style="height: 60em"></div>
+      <div class="spacer" style="height: 20em"></div>
 
       <div style="margin: 0 -15px">
         <div class="row">
@@ -312,7 +321,11 @@ layout: default
 
 <style>
   .kit-section {
-    min-height: 200px;
+    min-height: 140px;
+  }
+  .usage-hint {
+    font-size: 0.8rem;
+    font-weight: 600;
   }
 </style>
 <div class="skew left flat-bottom">
@@ -326,7 +339,7 @@ layout: default
     <div class="margins">
       <div class="row">
         <div class="col-sm-7">
-          <div class="expand-image-wrapper">
+          <div class="expand-image-wrapper" style="position: relative; left: -10px;">
             <div class="expand-image">
               <svg id="kit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 747">
                 <image class="kit-section-component kit-section-buttonboard"
@@ -387,51 +400,50 @@ layout: default
             <p>
               Tingbot comes as part of a kit that you can build yourself.
             </p>
-            <p class="hidden-xs">
+            <p class="hidden-xs usage-hint">
               <i class="fa fa-hand-o-left" aria-hidden="true"></i>
-              Move your cursor over the components to find out more.
+              &nbsp;Move your cursor over the parts to find out more.
             </p>
-            <p class="visible-xs-block">
+            <p class="visible-xs-block usage-hint">
               <i class="fa fa-hand-o-up" aria-hidden="true"></i>
-              Tap the components to find out more.
+              Tap the parts to find out more.
             </p>
-            <div class="spacer" style="height: 14em"></div>
-            <a class="btn btn-transparent">
-              Buy it now!
-            </a>
           </div>
           
           <div id="kit-section-pi" class="kit-section" style="display:none">
-            <h2>Raspberry Pi</h2>
+            <h4>Raspberry Pi</h4>
             <p>
               Raspberry Pi is the brains of Tingbot. You might already have one in a drawer somewhere! We support Raspberry Pi B+, 2 and 3.
             </p>
           </div>
           <div id="kit-section-os" class="kit-section" style="display:none">
-            <h2>Tingbot OS</h2>
+            <h4>Tingbot OS</h4>
             <p>
               Tingbot runs our own operating system so everything is ready to go right out the box.
             </p>
           </div>
           <div id="kit-section-module" class="kit-section" style="display:none">
-            <h2>Screen module</h2>
+            <h4>Screen module</h4>
             <p>
               Our custom touch screen attaches to the Pi through the GPIO pins.
             </p>
           </div>
           <div id="kit-section-buttonboard" class="kit-section" style="display:none">
-            <h2>Button board</h2>
+            <h4>Button board</h4>
             <p>
               Our button board provides four old-school clicky buttons that you can use in your apps.
             </p>
           </div>
           <div id="kit-section-case" class="kit-section" style="display:none">
-            <h2>Case</h2>
+            <h4>Case</h4>
             <p>
               The caps hold the Raspberry Pi and screen together and the wrap packages it up neatly - you can even make your own!
             </p>
           </div>
-
+          <div class="spacer" style="height: 14em"></div>
+          <a class="btn shop-button" style="color: #92e1e1" href="https://store.tingbot.com">
+            Shop now
+          </a>
         </div>
       </div>
       <div class="spacer" style="height: 80em"></div>
@@ -476,12 +488,12 @@ layout: default
 <style>
   .quote {
     font-weight: 300;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
   .quote-image {
-    max-width: 100px;
-    padding: 0 10px;
-    padding-bottom: 15px;
+    max-width: 80px;
+    margin: 0 10px;
+    margin-bottom: 15px;
   }
   .quote-credit {
     text-align: right;
@@ -522,6 +534,19 @@ layout: default
 {% endcomment %}
 
 <style>
+  .tide-bg {
+    background-color: #02a7e6;
+    background-image: url(/images/tide-bg.jpg);
+    background-position: center -100px;
+    background-repeat: no-repeat;
+    background-size: 2600px auto;
+  }
+  @media (max-width:767px) {
+    .tide-bg {
+      background-position: 42% -80px;
+      background-size: 1600px auto;
+    }
+  }
   .tide-feature {
     text-align: center;
     padding: 0 10px;
@@ -532,12 +557,27 @@ layout: default
     margin-bottom: 10px;
   }
   .tide-feature .title {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 10px;
   }
   .tide-feature .description {
     font-weight: 300;
     font-size: 0.8rem;
+  }
+  @media(max-width:767px) {
+    .tide-feature {
+      text-align: left;
+      padding: 0;
+    }
+    .tide-feature .icon {
+      width: 25%;
+      float: left;
+      margin-right: 1.2rem;
+    }
+    .tide-feature .title {
+      margin-top: 0.7rem;
+      margin-bottom: 0.2rem;
+    }
   }
   .tide-tingbot {
     display: inline-block;
@@ -574,21 +614,34 @@ layout: default
 </style>
 <div class="skew right flat-top">
   <div class="skew-outline">
-    <div class="skew-background"
-         style="background-color: #02a7e6;
-                background-image: url(/images/tide-bg.jpg);
-                background-position: center -100px;
-                background-repeat: no-repeat;
-                background-size: 2600px auto">
+    <div class="skew-background tide-bg">
     </div>
   </div>
   <div class="skew-content" style="color: white;">
     <div class="spacer" style="height: 100em"></div>
+
     <div class="margins">
       <div class="row">
         <div class="col-sm-7 col-sm-offset-5">
           <div style="min-height: 300px;">
+
+
+            <div class="text-right visible-xs-block">
+              <div class="spacer" style="height: 400em"></div>
+
+              <div class="expand-image-wrapper" style="width: 200px; margin-left: auto; position: relative; top: 80px">
+                <div class="expand-image">
+                  <div class="tide-tingbot">
+                    <div class="tide-tingbot-layer" style="background-image: url(/images/tide-tingbot.png);">
+                    </div>
+                    <div class="tide-tingbot-layer" style="background-image: url(/images/tide-tingbot-screen.gif);">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <h1>Tide</h1>
+
             <p>
               The easiest way to make apps for Tingbot is with Tide; our very own code editor.
             </p>
@@ -596,7 +649,7 @@ layout: default
               Tingbot apps are written in Python (one of the easiest programming languages to learn) and in just a few lines of code, you can make some pretty sweet apps for Tingbot.
             </p>
           </div>
-          <div class="text-right">
+          <div class="text-right hidden-xs">
             <div class="expand-image-wrapper">
               <div class="expand-image">
                 <div class="tide-tingbot">
@@ -612,7 +665,39 @@ layout: default
       </div>
       <div class="spacer" style="height: 40em"></div>
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-7 col-sm-push-5">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="tide-feature clearfix">
+                <div class="icon">
+                  <img src="/images/tide-step-1.svg" />
+                </div>
+                <div class="title">Libraries and example code to get you started</div>
+                <div class="description"></div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="tide-feature clearfix">
+                <div class="icon">
+                  <img src="/images/tide-step-2.svg" />
+                </div>
+                <div class="title">Upload your apps to Tingbot in seconds</div>
+                <div class="description"></div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="tide-feature clearfix">
+                <div class="icon">
+                  <img src="/images/tide-step-3.svg" />
+                </div>
+                <div class="title">Make Tingbot apps on-the-go with the built-in simulator</div>
+                <div class="description"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-sm-pull-7">
           <h2>Get Tide for Mac</h2>
           <p>
             Download the Tide desktop app to write your own apps for Tingbot.
@@ -630,40 +715,9 @@ layout: default
             <a href="http://docs.tingbot.com/tide/">Linux</a> version?
           </p>
         </div>
-        <div class="col-sm-7 col-sm-push-1">
-          <div class="row">
-            <div class="col-xs-4">
-              <div class="tide-feature">
-                <div class="icon">
-                  <img src="/images/tide-step-1.svg" />
-                </div>
-                <div class="title">Libraries and example code to get you started</div>
-                <div class="description"></div>
-              </div>
-            </div>
-            <div class="col-xs-4">
-              <div class="tide-feature">
-                <div class="icon">
-                  <img src="/images/tide-step-2.svg" />
-                </div>
-                <div class="title">Upload your apps to Tingbot in seconds</div>
-                <div class="description"></div>
-              </div>
-            </div>
-            <div class="col-xs-4">
-              <div class="tide-feature">
-                <div class="icon">
-                  <img src="/images/tide-step-3.svg" />
-                </div>
-                <div class="title">Develop Tingbot apps on-the-go with the built-in simulator</div>
-                <div class="description"></div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-    <div class="spacer" style="height: 80em"></div>
+    <div class="spacer" style="height: 60em"></div>
   </div>
 </div>
 
@@ -673,6 +727,7 @@ layout: default
   .build-apps-background {
     background-image: url(/images/alice-bg.jpg);
     background-size: 100% auto;
+    background-position: center 40%;
   }
   @media(max-width:767px) {
     .build-apps-background {
@@ -689,18 +744,18 @@ layout: default
     </div>
   </div>
   <div class="skew-content" style="color: white">
-    <div class="spacer" style="height: 60em"></div>
+    <div class="spacer" style="height: 70em"></div>
     <div class="margins">
       <div class="row">
         <div class="col-sm-5">
           <h2>Build apps, not programs.</h2>
-          <p>
+          <p class="smaller">
             With Tingbot, you learn by doing, seeing the results
             of your work every step of the way. We don’t think
             that you should have to sit through hours of  “learn
             to code” material before making something real. 
           </p>
-          <p>
+          <p class="smaller">
             But we’re not dumbing-down &ndash; Tingbot teaches users
             Python: a real industrial programming language that
             could get you a job at Dropbox or build the next Uber.
@@ -710,7 +765,7 @@ layout: default
       </div>
     </div>
 
-    <div class="spacer" style="height: 60em"></div>
+    <div class="spacer" style="height: 70em"></div>
 
     </div>
   </div>
@@ -736,7 +791,7 @@ layout: default
 
 <style>
   .examples-gallery-item {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   .examples-gallery-item .user-photo {
     display: inline-block;
@@ -762,13 +817,15 @@ layout: default
   .examples-gallery-item .photo {
     clear: both;
     margin-top: 10px;
-    margin-bottom: 14px;
+    margin-bottom: 8px;
     background-size: cover;
     background-position: center;
+    font-size: 0;
   }
   .examples-gallery-item .description {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 400;
+    line-height: 1.5;
   }
 
   @media(max-width:767px) {
@@ -787,13 +844,15 @@ layout: default
     </div>
   </div>
   <div class="skew-content">
-    <div class="spacer" style="height: 50em"></div>
-    <div class="margins">
-      <h1>What can Tingbot do?</h1>
+    <div class="spacer" style="height: 80em"></div>
+    <div class="margins narrow text-center">
+      <h1 >What can Tingbot do?</h1>
       <p>
         With a Raspberry Pi at it’s core, Tingbot can do pretty much anything you can think of. That said, here’s a few practical things people have made...
       </p>          
-      <div class="spacer" style="height: 50em"></div>
+    </div>
+    <div class="spacer" style="height: 50em"></div>
+    <div class="margins">
       <div class="examples-gallery">
         <div class="row">
           <div class="examples-gallery-item col-xs-6 col-sm-4">
@@ -935,7 +994,7 @@ layout: default
 </div>
 <script>
   window.addEventListener('load', function () {
-    $('.examples-gallery-item').matchHeight({property: 'min-height'});
+    $('.examples-gallery-item').matchHeight({property: 'height'});
   });
 </script>
 
@@ -967,6 +1026,10 @@ layout: default
     display: inline-block;
     text-align: center;
     margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  a.team-member:hover, a.team-member:focus {
+    text-decoration: none;
   }
   .team-member .photo {
     background-color: #b4b6b8;
@@ -980,7 +1043,7 @@ layout: default
   }
   
   .core.team-member {
-    width: 20%;
+    width: 16%;
     min-width: 140px;
   }
   .core.team-member .photo {
@@ -994,20 +1057,50 @@ layout: default
     min-width: 90px;
     vertical-align: top;
     font-size: 0.65rem;
+    padding: 0 8px;
   }
   .community.team-member .photo {
     height: 2.8rem;
     width: 2.8rem;
     border-radius: 50%;
   }
+  .backers-grid {
+    background-image: url(/images/backers-grid.jpg);
+    background-size: cover;
+    padding-bottom: 24%;
+    position: relative;
+  }
+  .backers-grid:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(/images/backers-grid-overlay.png);
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width:767px) {
+    .backers-grid {
+      background-image: url(/images/backers-grid.jpg);
+      background-position: left;
+      padding-bottom: 100%;
+    }
+  }
 </style>
+
+<div class="spacer" style="height: 80em"></div>
+
 <h1 style="text-align: center">The Team</h1>
 <div class="margins narrow">
-  <p>
+  <p class="smaller">
     We’re a small team of designers and engineers who enjoy making things together.
     We built Tingbot over the past 4 years as a passion project.
   </p>
-  <p>
+  <p class="smaller">
     We launched on Kickstarter at the end of 2015, and in 2016 delivered our first
     batch of Tingbots to our founding backers. The Tingbot Community Team has
     formed off the back of our campaign and their open-source contributions have
@@ -1015,97 +1108,97 @@ layout: default
   </p>
 </div>
 
-<div class="spacer" style="height: 60em"></div>
+<div class="spacer" style="height: 40em"></div>
 
 <div class="margins">
   <h3 style="text-align:center">Core team</h3>
 
   <div class="team-members">
-    <div class="core team-member">
+    <a class="core team-member" target="_blank" href="https://twitter.com/benpawle">
       <div class="photo" style="background-image: url(/images/mugs/ben.jpg)"></div>
       <div class="name">Ben Pawle</div>
-      <div class="position">Designer</div>
-    </div>
-    <div class="core team-member">
+      <div class="position">Design</div>
+    </a>
+    <a class="core team-member" target="_blank" href="https://twitter.com/joerick">
       <div class="photo" style="background-image: url(/images/mugs/joe.jpg)"></div>
       <div class="name">Joe Rickerby</div>
       <div class="position">Software</div>
-    </div>
-    <div class="core team-member">
+    </a>
+    <a class="core team-member" target="_blank" href="https://twitter.com/kennysmed">
       <div class="photo" style="background-image: url(/images/mugs/ken.jpg)"></div>
       <div class="name">Ken Smeed</div>
-      <div class="position">Designer</div>
-    </div>
-    <div class="core team-member">
+      <div class="position">Design</div>
+    </a>
+    <a class="core team-member" target="_blank" href="https://twitter.com/DuncanSmeed">
       <div class="photo" style="background-image: url(/images/mugs/dunc.jpg)"></div>
       <div class="name">Duncan Smeed</div>
       <div class="position">Hardware</div>
-    </div>
-    <div class="core team-member">
+    </a>
+    <a class="core team-member" target="_blank" href="https://www.linkedin.com/in/philip-gilbanks-97553425">
       <div class="photo" style="background-image: url(/images/mugs/phil.jpg)"></div>
       <div class="name">Phil Gilbanks</div>
       <div class="position">Technical</div>
-    </div>
+    </a>
   </div>
   
-  <div class="spacer" style="height: 40em"></div>
+  <div class="spacer" style="height: 20em"></div>
 
   <h3 style="text-align:center">Community team</h3>
 
   <div class="team-members">
-    <div class="community team-member">
+    <a class="community team-member" target="_blank" href="http://www.iandera.com/">
       <div class="photo" style="background-image: url(/images/mugs/iandera.jpg"></div>
       <div class="name">Ian Dera</div>
       <div class="position">DFM Expert</div>
-    </div>
-    <div class="community team-member">
+    </a>
+    <a class="community team-member" target="_blank" href="https://github.com/furbrain">
       <div class="photo" style="background-image: url(/images/mugs/furbrain.jpg"></div>
       <div class="name">Phil Underwood</div>
       <div class="position">Open source developer</div>
-    </div>
-    <div class="community team-member">
+    </a>
+    <a class="community team-member" target="_blank" href="https://github.com/Rob4001">
       <div class="photo" style="background-image: url(/images/mugs/rob4001.jpg"></div>
       <div class="name">Robert Wilson</div>
       <div class="position">Open source developer</div>
-    </div>
-    <div class="community team-member">
+    </a>
+    <a class="community team-member" target="_blank" href="https://github.com/WhistleMaster">
       <div class="photo" style="background-image: url(/images/mugs/whistlemaster.jpg"></div>
       <div class="name">Whistlemaster</div>
       <div class="position">One-man tingapp wolf pack</div>
-    </div>
-    <div class="community team-member">
+    </a>
+    <a class="community team-member" target="_blank" href="https://www.linkedin.com/in/bengreenock">
       <div class="photo" style="background-image: url(/images/mugs/greenock.jpg"></div>
       <div class="name">Ben Greencock</div>
       <div class="position">Design contributor</div>
-    </div>
-    <div class="community team-member">
+    </a>
+    <a class="community team-member" target="_blank" href="https://twitter.com/herebytheway">
       <div class="photo" style="background-image: url(/images/mugs/ash.jpg"></div>
       <div class="name">Ashley Johnston</div>
       <div class="position">Design contributor</div>
-    </div>
-    <div class="community team-member">
+    </a>
+    <a class="community team-member" target="_blank" href="https://twitter.com/Kavism">
       <div class="photo" style="background-image: url(/images/mugs/kav.jpg"></div>
       <div class="name">Kavism</div>
       <div class="position">Design contributor</div>
-    </div>
-    <div class="community team-member">
+    </a>
+    <a class="community team-member" target="_blank" href="https://twitter.com/Gadgetoid">
       <div class="photo" style="background-image: url(/images/mugs/gadgetoid.jpg"></div>
       <div class="name">Gadgetoid</div>
       <div class="position">Tester</div>
-    </div>
-    <div class="community team-member">
+    </a>
+    <a class="community team-member" target="_blank" href="https://www.linkedin.com/in/zo%C3%AB-prosser-634898107">
       <div class="photo" style="background-image: url(/images/mugs/zoe.jpg"></div>
       <div class="name">Zoe Prosser</div>
       <div class="position">Tester</div>
-    </div>
+    </a>
   </div>
 </div>
 
 <div class="spacer" style="height: 40em"></div>
 
-<h3 style="text-align:center">Thanks to all our Kickstarter backers!</h3>
-
-<img src="images/backersgrid.jpg">
+<div class="backers-grid">
+  <div class="backers-grid-overlay"></div>
+</div>
 
 <div class="spacer" style="height: 13em"></div>
 
@@ -1136,20 +1229,18 @@ layout: default
       <div class="row">
         <div class="col-sm-4"></div>
         <div class="col-sm-8 text-center">
-          <div class="spacer" style="height: 100em"></div>
-          <h2>What are you waiting for?</h2>
-          <div class="spacer" style="height: 20em"></div>
-          <a href="http://store.tingbot.com" class="btn btn-transparent btn-lg">
+          <div class="spacer" style="height: 80em"></div>
+          <img src="/images/waywf.png" style="max-width: 60%">
+          <div class="spacer" style="height: 30em"></div>
+          <a href="http://store.tingbot.com" class="btn shop-button" style="color: #c48fd2">
             Buy Tingbot now!
           </a>
-          <div class="spacer" style="height: 100em"></div>
+          <div class="spacer" style="height: 80em"></div>
         </div>
       </div>
     </div>
     </div>
   </div>
 </div>
-
-<div class="spacer" style="height: 20em"></div>
 
 {% include footer.html %}
