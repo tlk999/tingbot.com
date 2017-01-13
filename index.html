@@ -698,16 +698,17 @@ layout: default
         </div>
 
         <div class="col-sm-4 col-sm-pull-7">
-          <h2>Get Tide for Mac</h2>
+          <h2>Get Tide <span class="tide-platform"></span></h2>
           <p>
             Download the Tide desktop app to write your own apps for Tingbot.
           </p>
-          <a class="btn btn-default btn-block btn-tide-download">
+          <a class="btn btn-default btn-block btn-tide-download"
+             href="http://docs.tingbot.com/tide/">
             <i class="fa fa-apple" aria-hidden="true"></i>
             &nbsp;
-            <b>Download</b> (80MB)
+            <b>Download</b> <span class="tide-download-size">(80MB)</span>
           </a>
-          <p class="tide-faint">
+          <p class="tide-faint tide-version">
             Version 1.0.3
           </p>
           <p class="tide-faint">
@@ -720,6 +721,55 @@ layout: default
     <div class="spacer" style="height: 60em"></div>
   </div>
 </div>
+<script>
+  var platforms = {
+    "MacIntel": {
+      icon: "apple",
+      name: "Mac",
+      size: "68MB",
+      download: "http://tide-download.tingbot.com/download/osx",
+    },
+    "Win32": {
+      icon: "windows",
+      name: "Windows",
+      size: "103MB",
+      download: "http://tide-download.tingbot.com/download/win",
+    },
+    "Linux": {
+      icon: "linux",
+      name: "Linux",
+      size: "59MB",
+      download: "http://github.com/tingbot/tide-electron/releases/latest",
+    },
+  }
+
+  var platform = platforms[window.navigator.platform]
+
+  if (!platform) {
+    if (window.navigator.platform.indexOf('Linux') != -1) {
+      platform = platforms['Linux']
+    }
+  }
+
+  if (platform) {
+    $('.tide-platform').text('for '+platform.name)
+    $('.tide-download-size').text('('+platform.size+')')
+    $('.btn-tide-download').attr('href', platform.download)
+
+  }
+
+  $.get({
+    url: 'https://api.github.com/repos/tingbot/tide-electron/releases/latest',
+    success: function (data) {
+      var name = data.name || data.tag_name
+      $('.tide-version').text('Version '+name)
+    },
+    error: function (jqXHR, errorString, errorThrown) {
+      console.log('Error getting Tide version info. ', errorString, errorThrown)
+    }
+  })
+</script>
+
 
 <div class="spacer" style="height: 14em"></div>
 
