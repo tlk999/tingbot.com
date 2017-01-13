@@ -704,16 +704,19 @@ layout: default
           </p>
           <a class="btn btn-default btn-block btn-tide-download"
              href="http://docs.tingbot.com/tide/">
-            <i class="fa fa-apple" aria-hidden="true"></i>
+            <span class="tide-platform-icon">
+              <i class="fa fa-apple" aria-hidden="true"></i>
+              <i class="fa fa-windows" aria-hidden="true"></i>
+              <i class="fa fa-linux" aria-hidden="true"></i>
+            </span>
             &nbsp;
-            <b>Download</b> <span class="tide-download-size">(80MB)</span>
+            <b>Download</b> <span class="tide-download-size"></span>
           </a>
           <p class="tide-faint tide-version">
             Version 1.0.3
           </p>
-          <p class="tide-faint">
-            Looking for the <a href="http://docs.tingbot.com/tide/">Windows</a> or
-            <a href="http://docs.tingbot.com/tide/">Linux</a> version?
+          <p class="tide-faint tide-other-platforms">
+            
           </p>
         </div>
       </div>
@@ -728,18 +731,21 @@ layout: default
       name: "Mac",
       size: "68MB",
       download: "http://tide-download.tingbot.com/download/osx",
+      other: 'Looking for the [Windows] or [Linux] version?',
     },
     "Win32": {
       icon: "windows",
       name: "Windows",
       size: "103MB",
       download: "http://tide-download.tingbot.com/download/win",
+      other: 'Looking for the [Mac] or [Linux] version?',
     },
     "Linux": {
       icon: "linux",
       name: "Linux",
       size: "59MB",
       download: "http://github.com/tingbot/tide-electron/releases/latest",
+      other: 'Looking for the [Mac] or [Windows] version?',
     },
   }
 
@@ -756,6 +762,12 @@ layout: default
     $('.tide-download-size').text('('+platform.size+')')
     $('.btn-tide-download').attr('href', platform.download)
 
+    var otherPlatformsString = platform.other.split('[')
+                                             .join('<a href="http://docs.tingbot.com/tide/">')
+                                             .split(']')
+                                             .join('</a>')
+    $('.tide-other-platforms').html(otherPlatformsString)
+    $('.tide-platform-icon').html('<i class="fa fa-'+platform.icon+'" aria-hidden="true"></i>')
   }
 
   $.get({
