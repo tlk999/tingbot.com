@@ -480,6 +480,16 @@ layout: default
       showKitSection();
     });
 
+    $('#kit .hover-area').on('touchstart', function (event) {
+      var sectionId = $(this).data('sectionId');
+      showKitSection(sectionId);
+      event.stopPropagation();
+    });
+
+    $('body').on('touchstart', function (event) {
+      showKitSection();
+    });
+
     showKitSection();
   })
 </script>
