@@ -1,7 +1,8 @@
+<!-- Start Tingbot supernav -->
 <div class="supernav">
   <div class="supernav-logo">
     <a href="http://tingbot.com">
-      <svg style="vertical-align:2px;" xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 26 26">
+      <svg style="vertical-align:1px;" xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 26 26">
         <g>
           <path d="M26,26H0V0h26V26z M2,24h22V2H2V24z"/>
           <polygon points="10.874,17.014 21,14 19,17 9,20  "/>
@@ -76,17 +77,21 @@
     display: none;
     position: absolute;
     top: 14px;
-    right: 10px;
+    right: 21px;
   }
   .supernav-hamburger svg {
     fill: currentColor;
   }
   @media (max-width: 767px) {
+    .supernav-logo, .supernav-item {
+      padding-left: 12px;
+    }
     .supernav-hamburger {
       display: inline-block;
     }
     .supernav-item {
       display: none;
+      clear: both;
     }
     .supernav.menuopen .supernav-item {
       display: block;
@@ -101,3 +106,4 @@
     supernav.classList.toggle('menuopen');
   }
 </script>
+<!-- End Tingbot supernav -->

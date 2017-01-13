@@ -12,8 +12,8 @@
   }
   .footer-links a {
     display: block;
-    line-height: 1.8;
     font-size: 0.8rem;
+    margin-bottom: 0.5em;
     color: inherit;
   }
   .footer-copyright {
@@ -21,12 +21,17 @@
     font-size: 0.8rem;
     color: #888;
   }
+  @media (max-width:767px) {
+    .footer {
+      margin-top: 30px;
+    }
+  }
 </style>
 <div class="footer">
   <div class="margins">
     <div class="row">
       <div class="col-sm-1"></div>
-      <div class="col-sm-2">
+      <div class="col-sm-2 col-xs-4">
       <div class="footer-links-header">Tingbot</div>
         <div class="footer-links">
           <a href="http://ocean.tingbot.com">Apps</a>
@@ -37,7 +42,7 @@
           <a href="http://tingbot.com/codeofconduct/" target="_blank">Code of Conduct</a>
         </div>
       </div>
-      <div class="col-sm-2">
+      <div class="col-sm-2 col-xs-4">
         <div class="footer-links-header">Connect</div>
         <div class="footer-links">
           <a href="https://github.com/tingbot" target="_blank">Github</a>
@@ -47,7 +52,7 @@
           <a href="mailto:hello@tingbot.com">Contact</a>
         </div>
       </div>
-      <div class="col-sm-2">
+      <div class="col-sm-2 col-xs-4">
         <div class="footer-links-header">About</div>
         <div class="footer-links">
           <a href="https://www.kickstarter.com/projects/744235676/tingbot-raspberry-pi-made-fun" target="_blank">Kickstarter</a>
@@ -55,6 +60,7 @@
           <a href="http://nordcollective.com/" target="_blank">Nord</a>
         </div>
       </div>
+      <div class="clearfix visible-xs-block" style="margin-bottom: 35px"></div>
       <div class="col-sm-4">
         <div class="footer-links-header">
           Sign up for Tingbot news
@@ -66,6 +72,7 @@
             width: 100%;
             height: 2rem;
             box-sizing: border-box;
+            border-radius: 0;
           }
           #mc_embed_signup input[type=email] {
             display: block;
