@@ -32,3 +32,16 @@ gems:
 exclude:
   - Gemfile*
   - open.command
+
+# social
+twitter:
+  username: thetingbot
+facebook:
+  app_id: 1642387226047001
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        twitter: /images/twitter-image.png
+        facebook: /images/facebook-image.png
