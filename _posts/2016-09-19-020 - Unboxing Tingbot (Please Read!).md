@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Unboxing Tingbot (Please Read!)"
-date: 2016-09-19 11:00:00
+title: Unboxing Tingbot (Please Read!)
+date: 2016-09-19T11:00:00.000Z
 author: Ken
-
 image: /images/blog/020.jpg
-description: Your Tingbots should have started to arrive (yay!) so here is a quick update of things that we thought we should highlight for those unboxing their bots.
+description: >-
+  Your Tingbots should have started to arrive (yay!) so here is a quick update
+  of things that we thought we should highlight for those unboxing their bots.
+published: true
 ---
 
 Hey guys!
@@ -26,7 +28,7 @@ A knock-on from using these balls is that they are perfect camouflage for our sm
 
 *Please check and recheck that your boxes have the three below small packets in them.*
 
-![](/images/blog/020-1.jpg)
+![](/images/blog/020-1.jpeg)
 *The feet, buttons and micro screws should be in there somewhere (please keep rummaging!)*
 
 
