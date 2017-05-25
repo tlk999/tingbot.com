@@ -11,7 +11,6 @@ published: true
 ---
 
 <iframe src="https://player.vimeo.com/video/180286644" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/180286644">
 
 
 A short but exciting update from us today!
