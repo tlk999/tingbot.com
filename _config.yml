@@ -33,6 +33,7 @@ exclude:
   - Readme.md
   - Gemfile*
   - open.command
+permalink: /blog/:year/:month/:day/:title.html
 
 # social
 twitter:
