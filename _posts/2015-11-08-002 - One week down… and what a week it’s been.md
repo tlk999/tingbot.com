@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "One week down… and what a week it’s been!"
-date: 2015-11-08 11:00:00
+title: One week down… and what a week it’s been!
+date: 2015-11-08T11:00:00.000Z
 author: Ken
-
 image: /images/blog/002.jpg
-description: We’ve been blown away by all the messages of encouragement and support from our backers - thank you.
+description: >-
+  We’ve been blown away by all the messages of encouragement and support from
+  our backers - thank you.
+published: true
 ---
 
 Hello Backers,
@@ -27,7 +29,7 @@ We have also been talking Tingbot around London; giving it a whirl, answering qu
 
 ## Tingbot meets Flotilla
 
-![](/images/blog/xx.jpg)
+<div style='position:relative;padding-bottom:101%'><iframe src='https://gfycat.com/ifr/DizzyNiftyDavidstiger' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
 
 
 Meanwhile, [Gadgetoid](//twitter.com/Gadgetoid) from [Pimoroni](//shop.pimoroni.com/) has been putting Tingbot through it’s paces and come up with a Kickstarter match made in heaven - Tingbot & Flotilla. If you haven’t seen Flotilla yet [check it out](//shop.pimoroni.com/collections/flotilla). We are really buzzed about how this mashup will progress and we’re already looking at building this into our libraries - exciting!
