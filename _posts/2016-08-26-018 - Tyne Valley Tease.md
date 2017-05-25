@@ -26,7 +26,7 @@ This morning we drove down to [Cutlasercut](//www.cutlasercut.com/) in Stockwell
 
 We don’t want to fully ruin the surprise for when you open your boxes - but check out the teaser-shots below :)
 
-![](/images/blog/xx.jpg)
+<iframe width="640" height="360" src="https://www.youtube.com/embed/XZjaN8rtuXE" frameborder="0" allowfullscreen></iframe>
 
 ![](/images/blog/018-3.png)
 
