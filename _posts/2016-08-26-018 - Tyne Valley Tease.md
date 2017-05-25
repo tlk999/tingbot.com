@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Tyne Valley Tease"
+date: 2016-08-26 11:00:00
+author: Ken
+categories: ?
+image: /img/018.jpg
+description: >
+Last weekend we travelled up to Tyne Valley Plastics in Northumblerand where our end-caps are being injection moulded.
+---
+
+![](/img/xx.jpg)
+
+
+A short but exciting update from us today!
+
+Last weekend we travelled up to [Tyne Valley Plastics](//www.tynevalleyplastics.co.uk/) in Northumblerand where our end-caps are being injection moulded. We wanted to get you the inside scoop so we shot a wee video of the moulding process and your side caps being made.
+
+A big shoutout to Eddie and Harry who have been a pleasure to work with throughout the process and put up with us while we poked a camera around their factory - we can’t recommend them enough!
+
+
+## Wrappers delight
+
+This morning we drove down to [Cutlasercut](//www.cutlasercut.com/) in Stockwell and collected the finished coloured wraps. Thanks to Russ, Mika and James for their incredible laser-skills.
+
+We don’t want to fully ruin the surprise for when you open your boxes - but check out the teaser-shots below :)
+
+![](/img/xx.jpg)
+
+![](/img/018-3.png)
+
+![](/img/018-4.jpg)
+
+
+## Screens ahoy, buttons aboard
+
+The last piece of news for the day is that we have received the first batch of Tingbot screen modules and button boards from China. The rest will be here over the next few days (with an update to follow) **(\^ー\^)**
+
+We can’t wait to be getting your Tingbots out to you over the next couple of weeks so stay tuned!
+
+*- The Tingbot Team*
