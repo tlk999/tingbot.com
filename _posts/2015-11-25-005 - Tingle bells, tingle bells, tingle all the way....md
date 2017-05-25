@@ -1,14 +1,17 @@
 ---
 layout: post
-title: "Tingle bells, tingle bells, tingle all the way..."
-date: 2015-11-25 11:00:00
+title: 'Tingle bells, tingle bells, tingle all the way...'
+date: 2015-11-25T11:00:00.000Z
 author: Ken
-
 image: /images/blog/005.jpg
-description: "'Tis the season to be jolly and we’re are tingling with excitement at the prospect of seeing the Tingbot go into production and delivering it to our backers."
+description: >-
+  'Tis the season to be jolly and we’re are tingling with excitement at the
+  prospect of seeing the Tingbot go into production and delivering it to our
+  backers.
+published: true
 ---
 
-![](/images/blog/005-1.gif.jpg)
+![](/images/blog/005-1.gif)
 
 
 'Tis the season to be jolly and we’re are tingling with excitement at the prospect of seeing the Tingbot go into production and delivering it to our backers.
