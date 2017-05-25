@@ -3,13 +3,12 @@ layout: post
 title: "Tyne Valley Tease"
 date: 2016-08-26 11:00:00
 author: Ken
-categories: ?
-image: /img/018.jpg
-description: >
-Last weekend we travelled up to Tyne Valley Plastics in Northumblerand where our end-caps are being injection moulded.
+
+image: /images/blog/018.jpg
+description: Last weekend we travelled up to Tyne Valley Plastics in Northumblerand where our end-caps are being injection moulded.
 ---
 
-![](/img/xx.jpg)
+![](/images/blog/xx.jpg)
 
 
 A short but exciting update from us today!
@@ -25,11 +24,11 @@ This morning we drove down to [Cutlasercut](//www.cutlasercut.com/) in Stockwell
 
 We don’t want to fully ruin the surprise for when you open your boxes - but check out the teaser-shots below :)
 
-![](/img/xx.jpg)
+![](/images/blog/xx.jpg)
 
-![](/img/018-3.png)
+![](/images/blog/018-3.png)
 
-![](/img/018-4.jpg)
+![](/images/blog/018-4.jpg)
 
 
 ## Screens ahoy, buttons aboard

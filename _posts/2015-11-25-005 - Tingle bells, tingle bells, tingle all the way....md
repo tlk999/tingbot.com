@@ -3,13 +3,12 @@ layout: post
 title: “Tingle bells, tingle bells, tingle all the way...“
 date: 2015-11-25 11:00:00
 author: Ken
-categories: ?
-image: /img/005.jpg
-description: >
-'Tis the season to be jolly and we’re are tingling with excitement at the prospect of seeing the Tingbot go into production and delivering it to our backers.
+
+image: /images/blog/005.jpg
+description: 'Tis the season to be jolly and we’re are tingling with excitement at the prospect of seeing the Tingbot go into production and delivering it to our backers.
 ---
 
-![](/img/005-1.gif.jpg)
+![](/images/blog/005-1.gif.jpg)
 
 
 'Tis the season to be jolly and we’re are tingling with excitement at the prospect of seeing the Tingbot go into production and delivering it to our backers.

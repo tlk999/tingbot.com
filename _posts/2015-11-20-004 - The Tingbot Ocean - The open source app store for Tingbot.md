@@ -3,13 +3,12 @@ layout: post
 title: “The Tingbot Ocean: The open source app store for Tingbot“
 date: 2015-11-20 11:00:00
 author: Ken
-categories: ?
-image: /img/004.jpg
-description: >
-We’re launching the first version of The Tingbot Ocean - a place where you can share your Tingbot apps and download others that have been created by the Tingbot community.
+
+image: /images/blog/004.jpg
+description: We’re launching the first version of The Tingbot Ocean - a place where you can share your Tingbot apps and download others that have been created by the Tingbot community.
 ---
 
-![](/img/004-1.png)
+![](/images/blog/004-1.png)
 
 
 It’s here folks!

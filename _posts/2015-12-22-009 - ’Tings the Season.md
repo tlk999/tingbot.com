@@ -3,13 +3,12 @@ layout: post
 title: "’Tings the Season"
 date: 2015-12-22 11:00:00
 author: Ken
-categories: ?
-image: /img/009.jpg
-description: >
-It’s the most wonderful time of the year, and to get everyone in the holiday spirit we’ve got a fantastically festive update for you.
+
+image: /images/blog/009.jpg
+description: It’s the most wonderful time of the year, and to get everyone in the holiday spirit we’ve got a fantastically festive update for you.
 ---
 
-![](/img/009-1.png)
+![](/images/blog/009-1.png)
 
 
 Hello all! 

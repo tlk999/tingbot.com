@@ -3,10 +3,9 @@ layout: post
 title: "Punchy Pi 3, Hyper Happenings & Much More"
 date: 2016-03-11 11:00:00
 author: Ken
-categories: ?
-image: /img/012.jpg
-description: >
-It’s been a busy old time here at Tingbot HQ over the last few weeks. Thanks for all your support and messages, we do love reading ‘em.
+
+image: /images/blog/012.jpg
+description: It’s been a busy old time here at Tingbot HQ over the last few weeks. Thanks for all your support and messages, we do love reading ‘em.
 ---
 
 It’s been a busy old time here at Tingbot HQ over the last few weeks. Thanks for all your support and messages, we do love reading ‘em.
@@ -20,13 +19,13 @@ We made the decision to hold off finalising our case when we heard rumours about
 
 Once we managed to get our hands on one, we made a few tweaks to our side caps to fit around the placement of new components. After a run-in with a rogue new transistor, and one slightly broken Pi later (eek) - the good news is that the modifications are complete and **our case is now fully compatible with the Raspberry Pi 3** as well as the B+ and 2 models.
 
-![](/img/012-1.png)
+![](/images/blog/012-1.png)
 *The transistor was a worthy sacrifice in having a Raspberry Pi 3 compatible case. RIP wee fella.*
 
 
 We have received and tested a high quality 3D print of our new design, which we are incredibly happy with and we are now good to go with the tooling process.
 
-![](/img/012-2.png)
+![](/images/blog/012-2.png)
 
 
 As for our injection mould, we have made some allowance for where the PCBs are gripped for shaving the tool down until we get a perfect friction fit…we can’t wait!
@@ -38,29 +37,29 @@ Following up from the release of the Pi 3, we're updating the base of the Tingbo
 
 We have also been making headway on the UI of the Tingbot OS, booting apps and changing settings on the device. See the teaser below, we don’t want to get ahead of ourselves just yet but keep your eyes peeled for more on this in the run up to launch.
 
-![](/img/012-3.gif)
+![](/images/blog/012-3.gif)
 
 
 ## Tingbot does Hyper Island
 
 Last week Ben took Tingbot on tour to [Hyper Island](//www.hyperisland.com/programs-and-courses/ma-digital-media-management), a (Swedish) Masters Institution specialising in strategy and technology who’ve launched in Manchester.
 
-![](/img/012-4.jpeg)
+![](/images/blog/012-4.jpeg)
 
 
 Students were tasked with researching the capabilities of Tingbot and other emerging technologies like Particle's Electron.
 
-![](/img/012-5.jpeg)
+![](/images/blog/012-5.jpeg)
 
 
 In just one day, students worked together to come up with their own ideas for how Tingbot could add value to peoples lives, and we were really impressed! They broke out the Play-dough and Lego for bringing their ideas to life. The idea of connecting Tingbot and Wearable devices was a popular one, here are some of our favourites:
 
-![](/img/012-6.png)
+![](/images/blog/012-6.png)
 
 
 ‘KidWatch’ is a child’s watch that alerts a parent when a child: moves too fast, travels too far, stays still for too long. The clever bit we liked was that the watch only notifies parents Tingbots when there is an emergency - so children feel free to play without constant supervision whilst parents can still feel reassured of their safety.
 
-![](/img/012-7.png)
+![](/images/blog/012-7.png)
 
 
 ‘Melody’ uses wearable data to understand your mood. It measures the levels of heart rate, tension, activity etc and maps this to sounds. As your day progresses and your mood changes, these patterns are pieced together into a song, which you can listen to and an ambient graphical visual. It’s purpose is to provide people with a way to reflect on their day, their mood, how they felt, and how they might do things differently tomorrow.

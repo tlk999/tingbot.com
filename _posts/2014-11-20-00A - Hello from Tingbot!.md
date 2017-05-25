@@ -3,13 +3,12 @@ layout: post
 title: “Hello from Tingbot!“
 date: 2014-11-20 11:00:00
 author: Tingbot Team
-categories: ?
-image: /img/00A.jpg
-description: >
-Thank you for your interest in Tingbot and Ting.it at the Elephant and Castle Maker Faire.
+
+image: /images/blog/00A.jpg
+description:   Thank you for your interest in Tingbot and Ting.it at the Elephant and Castle Maker Faire.
 ---
 
-![](/img/00A-1.jpg)
+![](/images/blog/00A-1.jpg)
 
 Hello makers!
 

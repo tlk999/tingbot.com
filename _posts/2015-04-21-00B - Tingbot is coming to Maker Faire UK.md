@@ -3,13 +3,12 @@ layout: post
 title: "Tingbot is coming to Maker Faire UK“
 date: 2015-04-21 11:00:00
 author: Tingbot Team
-categories: ?
-image: /img/00B.jpg
-description: >
-We've been fairly radio silent since the Elephant & Castle Mini Maker Faire - and for good reason!
+
+image: /images/blog/00B.jpg
+description: We've been fairly radio silent since the Elephant & Castle Mini Maker Faire - and for good reason!
 ---
 
-![](/img/00B-1.jpg)
+![](/images/blog/00B-1.jpg)
 
 
 Hello Tingbot faithful,

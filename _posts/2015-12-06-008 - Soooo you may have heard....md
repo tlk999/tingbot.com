@@ -3,13 +3,12 @@ layout: post
 title: “Soooo you may have heard…“
 date: 2015-12-06 11:00:00
 author: Ken
-categories: ?
-image: /img/008.jpg
-description: >
-...we smashed our funding goal! We have 5 very happy chappys in the Tingbot camp, who can’t thank our 744 backers enough!
+
+image: /images/blog/008.jpg
+description: ...we smashed our funding goal! We have 5 very happy chappys in the Tingbot camp, who can’t thank our 744 backers enough!
 ---
 
-![](/img/008-1.gif)
+![](/images/blog/008-1.gif)
 
 
 ## ...we smashed our funding goal!

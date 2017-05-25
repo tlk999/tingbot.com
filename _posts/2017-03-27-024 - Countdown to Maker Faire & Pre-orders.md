@@ -3,13 +3,12 @@ layout: post
 title: "Countdown to Maker Faire & Pre-orders"
 date: 2017-03-27 11:00:00
 author: Ken
-categories: ?
-image: /img/024.jpg
-description: >
-We have some exciting updates hot off the press so let’s get to it!
+
+image: /images/blog/024.jpg
+description: We have some exciting updates hot off the press so let’s get to it!
 ---
 
-![](/img/024-1.jpg)
+![](/images/blog/024-1.jpg)
 
 
 Hello Folks,

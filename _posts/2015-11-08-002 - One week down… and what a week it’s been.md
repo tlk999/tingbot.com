@@ -3,10 +3,9 @@ layout: post
 title: “One week down… and what a week it’s been!“
 date: 2015-11-08 11:00:00
 author: Ken
-categories: ?
-image: /img/002.jpg
-description: >
-We’ve been blown away by all the messages of encouragement and support from our backers - thank you.
+
+image: /images/blog/002.jpg
+description: We’ve been blown away by all the messages of encouragement and support from our backers - thank you.
 ---
 
 Hello Backers,
@@ -20,7 +19,7 @@ Thanks to everyone - whether you have written about us, backed us or shared Ting
 
 ## Talking Tingbot 
 
-![](/img/002-1.png)
+![](/images/blog/002-1.png)
 
 
 We have also been talking Tingbot around London; giving it a whirl, answering questions and inviting feedback. We hopped over to [Hardware Pioneers](//www.meetup.com/Hardware-Pioneers-by-Hardware-Startup-IO/) on Thursday night where we did a quick community shoutout followed by a demo. On Friday we were invited by [Caroline](//twitter.com/LineyJane) and the kind people at [Kano](//www.kano.me/) to present Tingbot over a delicious lunch. There was some great support for Tide and it wasn’t long before we were taking Tingbot apart and talking hardware!
@@ -28,7 +27,7 @@ We have also been talking Tingbot around London; giving it a whirl, answering qu
 
 ## Tingbot meets Flotilla
 
-![](/img/xx.jpg)
+![](/images/blog/xx.jpg)
 
 
 Meanwhile, [Gadgetoid](//twitter.com/Gadgetoid) from [Pimoroni](//shop.pimoroni.com/) has been putting Tingbot through it’s paces and come up with a Kickstarter match made in heaven - Tingbot & Flotilla. If you haven’t seen Flotilla yet [check it out](//shop.pimoroni.com/collections/flotilla). We are really buzzed about how this mashup will progress and we’re already looking at building this into our libraries - exciting!
@@ -36,7 +35,7 @@ Meanwhile, [Gadgetoid](//twitter.com/Gadgetoid) from [Pimoroni](//shop.pimoroni.
 
 ## Tingbot on Tour!
 
-![](/img/002-3.png)
+![](/images/blog/002-3.png)
 
 
 As part of our testing process, Zoë Prosser, a Product Design student from Glasgow has been experimenting with things she’d like to make for Tingbot. She’s made some impressive apps within such short space of time and even made a video diary of her experience. Check out how she got on [here](//vimeo.com/145037859).

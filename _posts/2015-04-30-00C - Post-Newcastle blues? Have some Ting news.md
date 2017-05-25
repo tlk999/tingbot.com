@@ -3,13 +3,12 @@ layout: post
 title: "Post-Newcastle blues? Have some Ting news“
 date: 2015-04-30 11:00:00
 author: Tingbot Team
-categories: ?
-image: /img/00C.jpg
-description: >
-Maker Faire went really well - Tingbot got a lot of interest, some great feedback and a whole bunch of new followers.
+
+image: /images/blog/00C.jpg
+description: Maker Faire went really well - Tingbot got a lot of interest, some great feedback and a whole bunch of new followers.
 ---
 
-![](/img/00C-1.png)
+![](/images/blog/00C-1.png)
 
 
 Hi folks!

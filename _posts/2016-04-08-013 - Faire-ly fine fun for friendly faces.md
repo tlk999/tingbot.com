@@ -3,13 +3,12 @@ layout: post
 title: "Faire-ly fine fun for friendly faces"
 date: 2016-04-08 11:00:00
 author: Ken
-categories: ?
-image: /img/013.jpg
-description: >
-This is just a short update to say Tingbot is going to be at Maker Faire UK in Newcastle (23rd 24th April) and we’d love to see some friendly faces there.
+
+image: /images/blog/013.jpg
+description: This is just a short update to say Tingbot is going to be at Maker Faire UK in Newcastle (23rd 24th April) and we’d love to see some friendly faces there.
 ---
 
-![](/img/013-1.jpg)
+![](/images/blog/013-1.jpg)
 
 
 ## Howdy folks!

@@ -3,13 +3,12 @@ layout: post
 title: “Our Kickstarter is coming!“
 date: 2015-10-07 11:00:00
 author: Ken
-categories: ?
-image: /img/00D.jpg
-description: >
-It’s been a wee while since our last mail and we’d like to share some exciting news with you... we’ve started filming our Kickstarter campaign!
+
+image: /images/blog/00D.jpg
+description: It’s been a wee while since our last mail and we’d like to share some exciting news with you... we’ve started filming our Kickstarter campaign!
 ---
 
-![](/img/00D-1.jpg)
+![](/images/blog/00D-1.jpg)
 
 
 Hello Tingbot troops!

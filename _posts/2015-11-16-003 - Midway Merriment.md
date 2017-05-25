@@ -3,13 +3,12 @@ layout: post
 title: “Midway Merriment“
 date: 2015-11-16 11:00:00
 author: Ken
-categories: ?
-image: /img/003.jpg
-description: >
-We are now half way through our campaign - what a ride! We hit 50% funding on Friday before reaching 60% by the end of the weekend!
+
+image: /images/blog/003.jpg
+description: We are now half way through our campaign - what a ride! We hit 50% funding on Friday before reaching 60% by the end of the weekend!
 ---
 
-![](/img/003-1.jpg)
+![](/images/blog/003-1.jpg)
 
 
 Hello Tingfans,
@@ -21,7 +20,7 @@ Thank you for all the support so far - for backing and for sharing. We couldn’
 
 ##If This Then That
 
-![](/img/xx.jpg)
+![](/images/blog/xx.jpg)
 
 
 Joe has been busy this week setting up Tingbot to receive data from [If This Then That](//ifttt.com/) using the brand-new webhooks. In the above video you can learn how to make an app to display SMS messages in just 12 lines of code. What a guy!
@@ -31,7 +30,7 @@ We're aiming to make regular videos to show the wide range of things you can do 
 
 ##Teaching Tingbot
 
-![](/img/003-3.jpg)
+![](/images/blog/003-3.jpg)
 
 
 Armed with a couple of Tingbots, Ben and Phil phil travelled to Cumbria to visit their old high school, Caldew, before heading on to Glasgow School of Art. On the trip they presented to Design & Technology and Product Design students about the process we have gone through with Tingbot from initial idea to live campaign. Stay tuned for a full update in the next few days!
@@ -39,7 +38,7 @@ Armed with a couple of Tingbots, Ben and Phil phil travelled to Cumbria to visit
 
 ##It’s ‘Appening
 
-![](/img/xx.jpg)
+![](/images/blog/xx.jpg)
 
 
 This week we will be launching our first version of the Tingbot app store where you can download some of our sample apps and try them out in [Tide](//github.com/tingbot/tide/releases) and the Tingbot Simulator. Now is your chance to start making and submitting your own apps if you haven’t already done so! If you have an app that you want to share or let others try out, email them through to **hello at tingbot dot com** and we will post them to the store.

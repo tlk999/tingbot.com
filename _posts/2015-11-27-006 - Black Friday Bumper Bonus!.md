@@ -3,13 +3,12 @@ layout: post
 title: “Black Friday Bumper Bonus!“
 date: 2015-11-27 11:00:00
 author: Ken
-categories: ?
-image: /img/006.jpg
-description: >
-Because Tingbot is all about encouraging creativity, for Black Friday we are opening up our wrap design to all backers.
+
+image: /images/blog/006.jpg
+description: Because Tingbot is all about encouraging creativity, for Black Friday we are opening up our wrap design to all backers.
 ---
 
-![](/img/006-1.jpg)
+![](/images/blog/006-1.jpg)
 
 
 Because Tingbot is all about encouraging creativity, for Black Friday **we are opening up our wrap design to all backers** so that you can fully express yourself.

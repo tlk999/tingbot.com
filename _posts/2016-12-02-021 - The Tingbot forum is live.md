@@ -3,17 +3,16 @@ layout: post
 title: "The Tingbot forum is live"
 date: 2016-12-02 11:00:00
 author: Ken
-categories: ?
-image: /img/021.jpg
-description: >
-It’s been a couple of months since your Tingbots have arrived and we thought what better way to start the community off than with our very own forum :)
+
+image: /images/blog/021.jpg
+description: It’s been a couple of months since your Tingbots have arrived and we thought what better way to start the community off than with our very own forum :)
 ---
 
 Hello Tingtroops,
 
 It’s been a couple of months since your Tingbots have arrived and we thought what better way to start the community off than with [our very own forum](//forum.tingbot.com/) :)
 
-![](/img/021-1.png)
+![](/images/blog/021-1.png)
 
 
 The new forum will be the go-to place where you can **share your apps, discuss ideas, troubleshoot, collaborate on projects** and show off anything else Tingbot related.

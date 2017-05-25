@@ -3,10 +3,9 @@ layout: post
 title: "The Tasty, Tangy, Tingbot Times"
 date: 2016-07-08 11:00:00
 author: Ken
-categories: ?
-image: /img/016.jpg
-description: >
-Some exciting news on the screen-front is that our manufacturers have sent through a video of our test-rig in full operation…
+
+image: /images/blog/016.jpg
+description: Some exciting news on the screen-front is that our manufacturers have sent through a video of our test-rig in full operation…
 ---
 
 Hello folks!
@@ -22,14 +21,14 @@ First off, apologies for the delay in this update going out. I know you guys lik
 
 Some exciting news on the screen-front is that our manufacturers have sent through a video of our test-rig in full operation…
 
-![](/img/xx.jpg)
+![](/images/blog/xx.jpg)
 
 
 Over the past couple of weeks we have made a custom disk image (alongside wiring instructions) that Itead could use to program both the screen module and run a test program in one go. Once the on-board chip has been programmed, the demo checks for colour, refresh, backlight and touch.
 
 The test procedure is now up and running and ready to program and test each and every one of your modules over the next few weeks.
 
-![](/img/016-2.png)
+![](/images/blog/016-2.png)
 
 
 We received a second round of samples from the manufacturers last week and noticed a slight snag with how they soldered one of the connectors. We have sent detailed instructions to them following our Skype calls and the final amendments are being made for the full run as we speak. So close now!
@@ -39,17 +38,17 @@ We received a second round of samples from the manufacturers last week and notic
 
 We have packing material….
 
-![](/img/016-3.png)
+![](/images/blog/016-3.png)
 
 
 We have custom boxes…
 
-![](/img/016-4.png)
+![](/images/blog/016-4.png)
  
 
 We have button caps….
 
-![](/img/016-5.png)
+![](/images/blog/016-5.png)
  
 
 **Our peripherals are all ready and waiting.**
@@ -69,16 +68,16 @@ Tingbot apps are running locally in the built-in simulator and we’re busy work
 
 There are lots of new UI builds coming together nicely - both for Tide and Tingbot OS:
 
-![](/img/016-6.png)
+![](/images/blog/016-6.png)
 *Tide Welcome Screen*
 
-![](/img/016-7.png)
+![](/images/blog/016-7.png)
 *Keyboard for Tingbot OS*
 
 
 So if you fancy joining in the fun, head over to our [Slack channel](//slack.tingbot.com/).
 
-![](/img/016-8.png)
+![](/images/blog/016-8.png)
 *App screens courtesy of @whistlemaster*
  
 

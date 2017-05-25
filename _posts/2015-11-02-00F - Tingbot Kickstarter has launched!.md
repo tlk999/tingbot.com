@@ -3,13 +3,12 @@ layout: post
 title: “Tingbot Kickstarter has launched!“
 date: 2015-11-02 11:00:00
 author: Tingbot Team
-categories: ?
-image: /img/00F.jpg
-description: >
-We have launched! The moment is finally here folks - Tingbot is officially on Kickstarter.
+
+image: /images/blog/00F.jpg
+description: We have launched! The moment is finally here folks - Tingbot is officially on Kickstarter.
 ---
 
-![](/img/00F-1.png)
+![](/images/blog/00F-1.png)
 
 
 Hello Tingfans,
