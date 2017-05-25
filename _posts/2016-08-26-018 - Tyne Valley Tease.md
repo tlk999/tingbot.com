@@ -11,7 +11,7 @@ published: true
 ---
 
 <iframe src="https://player.vimeo.com/video/180286644" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/180286644">How it&#039;s made - Tingbot</a> from <a href="https://vimeo.com/user36608751">NORD collective</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p><a href="https://vimeo.com/180286644">
 
 
 A short but exciting update from us today!
