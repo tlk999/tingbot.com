@@ -1,14 +1,17 @@
 ---
 layout: post
-title: "Tyne Valley Tease"
-date: 2016-08-26 11:00:00
+title: Tyne Valley Tease
+date: 2016-08-26T11:00:00.000Z
 author: Ken
-
 image: /images/blog/018.jpg
-description: Last weekend we travelled up to Tyne Valley Plastics in Northumblerand where our end-caps are being injection moulded.
+description: >-
+  Last weekend we travelled up to Tyne Valley Plastics in Northumblerand where
+  our end-caps are being injection moulded.
+published: true
 ---
 
-![](/images/blog/xx.jpg)
+<iframe src="https://player.vimeo.com/video/180286644" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/180286644">How it&#039;s made - Tingbot</a> from <a href="https://vimeo.com/user36608751">NORD collective</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 
 A short but exciting update from us today!
