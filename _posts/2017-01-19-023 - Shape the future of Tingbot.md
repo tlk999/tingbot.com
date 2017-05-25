@@ -5,7 +5,7 @@ date: 2017-01-19 11:00:00
 author: Ken
 
 image: /images/blog/023.jpg
-description: The Tingbot launch has been fantastic, and now we’re looking to the future! So we’d like to ask a favour from you: to help us make Tingbot better…
+description: "The Tingbot launch has been fantastic, and now we’re looking to the future! So we’d like to ask a favour from you: to help us make Tingbot better…"
 ---
 
 ![](/images/blog/023-1.jpg)
