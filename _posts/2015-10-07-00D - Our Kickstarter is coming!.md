@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Our Kickstarter is coming!"
-date: 2015-10-07 11:00:00
+title: Our Kickstarter is coming!
+date: 2015-10-07T11:00:00.000Z
 author: Ken
-
 image: /images/blog/00D.jpg
-description: It’s been a wee while since our last mail and we’d like to share some exciting news with you... we’ve started filming our Kickstarter campaign!
+description: "It’s been a wee while since our last mail and we’d like to share some exciting news with you...\_we’ve started filming our Kickstarter campaign!"
+published: true
 ---
 
 ![](/images/blog/00D-1.jpg)
@@ -20,7 +20,7 @@ This means we’re within a few weeks of going live and you’ll finally have th
 We think Kickstarter will be the best way to reach the makers and creators who will help make Tingbot a reality. And we hope you will join us on this journey.
 
 
-##So what’s the plan?
+## So what’s the plan?
 
 The first piece of news is we’ve reduced our hours at work to give the Kickstarter campaign our best shot, and so far it’s looking great!
 
