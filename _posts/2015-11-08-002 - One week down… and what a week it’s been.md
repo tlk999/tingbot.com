@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “One week down… and what a week it’s been!“
+title: "One week down… and what a week it’s been!"
 date: 2015-11-08 11:00:00
 author: Ken
 

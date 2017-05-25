@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Black Friday Bumper Bonus!“
+title: "Black Friday Bumper Bonus!"
 date: 2015-11-27 11:00:00
 author: Ken
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Tingbot Kickstarter has launched!“
+title: "Tingbot Kickstarter has launched!"
 date: 2015-11-02 11:00:00
 author: Tingbot Team
 

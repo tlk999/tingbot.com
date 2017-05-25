@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Midway Merriment“
+title: "Midway Merriment"
 date: 2015-11-16 11:00:00
 author: Ken
 

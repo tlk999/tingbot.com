@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Our Kickstarter is coming!“
+title: "Our Kickstarter is coming!"
 date: 2015-10-07 11:00:00
 author: Ken
 

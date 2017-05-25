@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Tingbot Kickstarter launches Monday 12pm“
+title: "Tingbot Kickstarter launches Monday 12pm"
 date: 2015-10-31 11:00:00
 author: Tingbot Team
 

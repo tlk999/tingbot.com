@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tingbot is coming to Maker Faire UK“
+title: "Tingbot is coming to Maker Faire UK"
 date: 2015-04-21 11:00:00
 author: Tingbot Team
 

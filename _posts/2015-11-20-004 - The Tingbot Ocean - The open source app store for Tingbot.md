@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “The Tingbot Ocean: The open source app store for Tingbot“
+title: "The Tingbot Ocean: The open source app store for Tingbot"
 date: 2015-11-20 11:00:00
 author: Ken
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Soooo you may have heard…“
+title: "Soooo you may have heard…"
 date: 2015-12-06 11:00:00
 author: Ken
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Post-Newcastle blues? Have some Ting news“
+title: "Post-Newcastle blues? Have some Ting news"
 date: 2015-04-30 11:00:00
 author: Tingbot Team
 

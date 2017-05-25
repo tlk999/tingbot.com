@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “Hello from Tingbot!“
+title: "Hello from Tingbot!"
 date: 2014-11-20 11:00:00
 author: Tingbot Team
 
