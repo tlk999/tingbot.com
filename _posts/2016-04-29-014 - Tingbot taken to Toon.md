@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Tingbot taken to Toon"
-date: 2016-04-29 11:00:00
+title: Tingbot taken to Toon
+date: 2016-04-29T11:00:00.000Z
 author: Ken
-
 image: /images/blog/014.jpg
-description: In this instalment of the Tingbot Times we’re talking project updates, Maker Faire and the launch of our Slack group for Tide developers. Let's get to it!
+description: >-
+  In this instalment of the Tingbot Times we’re talking project updates, Maker
+  Faire and the launch of our Slack group for Tide developers. Let's get to it!
+published: true
 ---
 
 ![](/images/blog/014-1.jpg)
@@ -14,7 +16,7 @@ description: In this instalment of the Tingbot Times we’re talking project upd
 In this instalment of the Tingbot Times we’re talking project updates, Maker Faire and the launch of our Slack group for Tide developers. Let's get to it!
 
 
-##First port of call - manufacturing.
+## First port of call - manufacturing.
 
 We’re really happy with how things are going across the board. A lot of the main components have been ordered and received. Button caps, WiFi dongles, SD cards, case plastic and rubber feet are all slowly filling up Ken's bedroom!
 
@@ -68,4 +70,3 @@ See y’all there :)
 *- The Tingbot Team*
 
 ![](/images/blog/014-8.jpg)
-
