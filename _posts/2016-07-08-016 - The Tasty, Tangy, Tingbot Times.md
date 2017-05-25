@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "The Tasty, Tangy, Tingbot Times"
-date: 2016-07-08 11:00:00
+title: 'The Tasty, Tangy, Tingbot Times'
+date: 2016-07-08T11:00:00.000Z
 author: Ken
-
 image: /images/blog/016.jpg
-description: Some exciting news on the screen-front is that our manufacturers have sent through a video of our test-rig in full operation…
+description: >-
+  Some exciting news on the screen-front is that our manufacturers have sent
+  through a video of our test-rig in full operation…
+published: true
 ---
 
 Hello folks!
@@ -21,7 +23,7 @@ First off, apologies for the delay in this update going out. I know you guys lik
 
 Some exciting news on the screen-front is that our manufacturers have sent through a video of our test-rig in full operation…
 
-![](/images/blog/xx.jpg)
+<div style='position:relative;padding-bottom:178%'><iframe src='https://gfycat.com/ifr/AdmirableKeenCanine' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
 
 
 Over the past couple of weeks we have made a custom disk image (alongside wiring instructions) that Itead could use to program both the screen module and run a test program in one go. Once the on-board chip has been programmed, the demo checks for colour, refresh, backlight and touch.
