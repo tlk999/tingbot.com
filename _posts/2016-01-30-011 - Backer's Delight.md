@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Backer's Delight"
-date: 2016-01-30 11:00:00
+title: Backer's Delight
+date: 2016-01-30T11:00:00.000Z
 author: Ken
-
 image: /images/blog/011.jpg
-description: The Tingbot Shoutout reward is here! We’ve just wrapped on our Tingbot Shoutout app - showcasing all our backers who pledged £1 or more.
+description: >-
+  The Tingbot Shoutout reward is here! We’ve just wrapped on our Tingbot
+  Shoutout app - showcasing all our backers who pledged £1 or more.
+published: true
 ---
 
 ![](/images/blog/011-1.jpg)
@@ -21,7 +23,7 @@ So without further ado, head on over to [The Tingbot Ocean](//ocean.tingbot.com/
 
 For those on Windows (who don’t have access to Tide yet), fear not! We have a special recording of the app in action on the Tingbot Simulator below…
 
-![](/images/blog/xx.jpg)
+<iframe width="640" height="360" src="https://www.youtube.com/embed/I__xmP_MEV8" frameborder="0" allowfullscreen></iframe>
 
 
 ## Colour Calculations
